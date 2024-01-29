@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generate Income with Fixed-Income</title>
+  <meta name="description" content="Generate income by investing in fixed-income.">
+  <meta name="keywords"
+    content="passive income, income investing, investing, cash flows, cash flow, bond investing, fixed income investing, fixed-income, bond markets, bonds, debt markets, debt">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <!-- Google Web Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+  <!-- Font Awesome Icons -->
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+  <style>
+    /* 
+      Colors:
+      light: #ebefe2;
+      middle:  #c4d0b8;
+      midpoint: #828E77;
+      dark: #3f4b36;
+      highlight: #9dd67d;
+    */
+
+    body {
+      font-family: 'Nunito', sans-serif;
+      background-color: #ebefe2;
+      color: #3f4b36;
+    }
+
+    .btn,
+    .btn:hover,
+    .btn:active,
+    .btn:focus {
+      background-color: #9dd67d;
+      color: #3f4b36;
+      border: none;
+    }
+
+    @media (min-width: 769px) {
+      .hero-section {
+        height: 100vh;
+      }
+
+      .hero-section h1 {
+        font-size: 80px;
+      }
+
+      .hero-card i,
+      .feature-card i {
+        font-size: 60px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      /* 100vh to top padding 80px */
+      .hero-section {
+        padding-top: 80px;
+      }
+
+      /* 80px to 50px */
+      .hero-section h1 {
+        font-size: 50px;
+      }
+
+      /* 60px to 40px */
+      .hero-card i,
+      .feature-card i {
+        font-size: 40px;
+      }
+
+      /* Only on small */
+      .hero-card h2 {
+        font-size: 26px;
+      }
+
+      /* Only on small */
+      .stats-section h2 {
+        font-size: 22px;
+      }
+
+      /* Only on small */
+      .features-header h1 {
+        padding-bottom: 0px;
+        padding-left: 20px;
+        font-size: 30px;
+      }
+
+      /* Only on small */
+      .avoid-section h1 {
+        font-size: 34px;
+      }
+
+      /* Only on small */
+      .avoid-section h2 {
+        font-size: 26px;
+      }
+
+      /* Only on small */
+      .offer-section a {
+        margin-bottom: 30px;
+      }
+    }
+
+    .hero-section {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .hero-section h1 {
+      font-weight: 600;
+    }
+
+    .hero-section p {
+      font-size: 22px;
+      margin-top: 40px;
+    }
+
+    .hero-card {
+      margin: 20px;
+    }
+
+    .hero-section .row {
+      margin-bottom: 60px;
+    }
+
+    .feature-card i {
+      margin-bottom: 15px;
+      color: #828E77;
+      /* midpoint between background and text */
+    }
+
+    .features-header {
+      padding-bottom: 50px;
+      font-size: 40px;
+    }
+
+    .feature-card {
+      min-height: 300px;
+      max-height: 350px;
+      max-width: 400px;
+      margin: 30px auto;
+      /* Center the cards on the screen */
+      background-color: #c4d0b8;
+      transition: background-color 0.3s ease;
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+      border: none;
+      text-align: center;
+      padding: 30px 30px;
+    }
+
+    .stats-section {
+      padding: 50px;
+      background-color: #c4d0b8;
+      margin-bottom: 100px;
+    }
+
+    .stat-box {
+      text-align: center;
+      margin: 20px;
+      padding: 20px;
+      border: none;
+    }
+
+    .signup-section {
+      display: flex;
+      height: 400px;
+      margin-top: 50px;
+      background-color: #3f4b36;
+      color: #9dd67d;
+    }
+
+    .avoid-section {
+      display: flex;
+      height: 400px;
+      margin-top: 100px;
+      margin-bottom: 100px;
+      padding-top: 300px;
+      padding-bottom: 300px;
+      background-color: #3f4b36;
+      color: #9dd67d;
+    }
+
+    .avoid-section i {
+      font-size: 30px;
+    }
+
+    .avoid-section .container {
+      width: 800px;
+    }
+
+    .offer-card {
+      border: 1px solid #9dd67d;
+      border-radius: 12px;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    .offer-section h1 {
+      margin-top: 50px;
+      font-size: 50px;
+    }
+
+    .offer-section p {
+      font-size: 22px;
+    }
+
+    .offer-card i {
+      font-size: 40px;
+      color: #9dd67d;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Hero End -->
+  <section id="hero">
+    <div class="container-fluid d-flex align-items-center justify-content-center">
+      <div class="container hero-section">
+        <div class="row align-items-center justify-content-center">
+          <h1>Generate Income</h1>
+          <div class="d-none d-sm-block"><br></div>
+          <h1>with Fixed-Income</h1>
+          <p>We make fixed-income investing seamless by consolidating market data into outcome-oriented workflows.</p>
+        </div>
+        <div class="row justify-content-center align-items-center">
+          <div class="col-sm-6 col-md-3" data-aos="fade-right">
+            <div class="hero-card">
+              <i class="fa-solid fa-money-bills"></i>
+              </br></br>
+              <h2>Build Income Streams</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3" data-aos="fade-right" data-aos-delay="400">
+            <div class="hero-card">
+              <i class="fa-solid fa-arrow-up-right-dots"></i>
+              </br></br>
+              <h2>Capture preset Capital Gains</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3" data-aos="fade-right" data-aos-delay="800">
+            <div class="hero-card">
+              <i class="fa-solid fa-shield-halved"></i>
+              </br></br>
+              <h2>Avoid Market Volatility</h2>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-3" data-aos="fade-right" data-aos-delay="1200">
+            <div class="hero-card">
+              <i class="fa-solid fa-ranking-star"></i>
+              </br></br>
+              <h2>Beat Bank Interest Rates</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" data-aos="fade-right" data-aos-delay="1700">
+          <a href="#" class="btn btn-lg">Get Instance Access</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
+  <!-- Hero End -->
+
+  <!-- Stats Start -->
+  <section id="stats" class="stats-section" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+    <div class="container">
+      <div class="row justify-content-center">
+        <h2>A market of opportunities</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="stat-box">
+            <h1 id="assetsStat">0</h1>
+            <h4>Fixed-Income Assets</h4>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="400">
+          <div class="stat-box">
+            <h1 id="yieldStat">0<span>%</span></h1>
+            <h4>Yield Potential</h4>
+          </div>
+        </div>
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="600">
+          <div class="stat-box">
+            <h1 id="capGainsStat">0<span>%</span></h1>
+            <h4>Capital Gains Potential</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Stats End -->
+
+  <!-- Features Start  -->
+  <section id="features">
+    <div class="container">
+      <div class="row justify-content-center features-header" data-aos="fade-up" data-aos-delay="100"
+        data-aos-duration="500">
+        <h1>Fixed-Income Outcome Oriented Workflows</h1>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="card feature-card">
+            <i class="fa-solid fa-money-bills"></i>
+            <h2>Income Stream</h2>
+            <p>Build an income stream where you determine the income amount and schedule.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="card feature-card">
+            <i class="fa-solid fa-arrow-up-right-dots"></i>
+            <h2>Capital Gains</h2>
+            <p>Fixed-income also has capital gains with the benefit of knowning the gains before you invest.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+          <div class="card feature-card">
+            <i class="fas fa-money-bill-transfer"></i>
+            <h2>Cash Flow</h2>
+            <p>Put cash to work while maintaining liquidity and avoiding market volatility with a continous schedule of
+              maturing assets.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+          <div class="card feature-card">
+            <i class="fa-regular fa-calendar-days"></i>
+            <h2>Set Period</h2>
+            <p>Maximize returns by aligning with your specific investment period. Like CDs, but with supior rates.
+            </p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+          <div class="card feature-card">
+            <i class="fa-regular fa-compass"></i>
+            <h2>Asset Explorer</h2>
+            <p>Search and filter through fixed-income assets based on your requirements.</p>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+          <div class="card feature-card">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <h2>Knowledge</h2>
+            <p>Learn the mechanics of fixed-income assets.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Features End  -->
+
+  <!-- Avoid Start -->
+  <section id="avoid" class="avoid-section" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+    <div class="container d-flex flex-column justify-content-center">
+      <h1 data-aos="fade-right" data-aos-delay="200">Fixed-Income is for you if you DON'T want:</h1>
+      </br>
+      <div class="d-flex align-items-center" data-aos="fade-right" data-aos-delay="400">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <span class="ml-3"></span>
+        <h2 class="mb-0">Market timing to determine your returns</h2>
+      </div>
+      </br>
+      <div class="d-flex align-items-center" data-aos="fade-right" data-aos-delay="600">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <span class="ml-3"></span>
+        <h2 class="mb-0">High risk of capital loss</h2>
+      </div>
+      </br>
+      <div class="d-flex align-items-center" data-aos="fade-right" data-aos-delay="800">
+        <i class="fa-regular fa-circle-xmark"></i>
+        <span class="ml-3"></span>
+        <h2 class="mb-0">Substantial uncertainty</h2>
+      </div>
+      </br>
+      </br>
+      <div data-aos="fade-right" data-aos-delay="1000">
+        <a href="#" class="btn btn-lg">Get Instance Access</a>
+      </div>
+    </div>
+  </section>
+  <!-- Avoid End -->
+
+  <!-- Offer Start -->
+  <section id="offer" class="offer-section" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+    <div class="container d-flex flex-column justify-content-center">
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+          <h1>What you get</h1>
+          </br>
+          <p>Technology that makes it easy for you to get what you want out of the fixed-income market.</p>
+          </br>
+          <div>
+            <a href="#" class="btn btn-lg">Get Instance Access</a>
+          </div>
+        </div>
+        <div class="col-lg-8">
+          <div class="offer-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-check"></i>
+              <span class="ml-3"></span>
+              <h3 class="mb-0">Lifetime Access to Market Data</h3>
+            </div>
+            </br>
+            <p>You only pay once and get lifetime access to corporate fixed-income market data.</p>
+          </div>
+          <div class="offer-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-check"></i>
+              <span class="ml-3"></span>
+              <h3 class="mb-0">Investment Workflows</h3>
+            </div>
+            </br>
+            <p>Streamlined investment workflows tailoring opportunities to your needs, and sparing you from overwhelm.
+            </p>
+          </div>
+          <div class="offer-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-check"></i>
+              <span class="ml-3"></span>
+              <h3 class="mb-0">Track Your Portfolio</h3>
+            </div>
+            </br>
+            <p>View your portfolio, know your income schedule, and get email notification reminders.</p>
+          </div>
+          <div class="offer-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-check"></i>
+              <span class="ml-3"></span>
+              <h3 class="mb-0">Practical Course</h3>
+            </div>
+            </br>
+            <p>Includes are practical course to provide you with the knowledge you need to get what you want done.</p>
+          </div>
+          <div class="offer-card" data-aos="fade-left" data-aos-delay="200">
+            <div class="d-flex align-items-center">
+              <i class="fa-solid fa-check"></i>
+              <span class="ml-3"></span>
+              <h3 class="mb-0">Guarantee</h3>
+            </div>
+            </br>
+            <p>If you invest $25,000 for a full year and don't beat the bank savings rate plus cover the cost of this
+              technology, we will return your money.</p>
+          </div>
+        </div>
+      </div>
+  </section>
+  <!-- Offer End -->
+
+  <!-- Sign Up Start -->
+  <section id="sign-up" class="signup-section" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+    <div class="container d-flex flex-column align-items-center justify-content-center">
+      <h1 data-aos="fade-right" data-aos-delay="400">Put your money to work today!</h1>
+      </br>
+      <div data-aos="fade-right" data-aos-delay="600">
+        <a href="#" class="btn btn-lg">Get Instance Access</a>
+      </div>
+  </section>
+  <!-- Sign Up End -->
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+  <script>
+    // Function to animate counting
+    function countUp(target, end, percent) {
+      let current = 0;
+      let increment = end / 90;
+      let stepTime = 1000 / 60; // 60 frames per second
+      let duration = 1500;
+      let steps = Math.floor(duration / stepTime);
+      let obj = document.getElementById(target);
+      let counter = 0;
+
+      let timer = setInterval(function () {
+        current += increment;
+        suffix = percent ? "%" : "";
+        obj.innerText = current.toFixed(0) + suffix;
+
+        if (++counter === steps) {
+          clearInterval(timer);
+        }
+      }, stepTime);
+    }
+
+    function handleIntersection(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const targetId = entry.target.id;
+          const value = targetId === "assetsStat" ? 31476 : targetId === "yieldStat" ? 12 : 22;
+          countUp(targetId, value, targetId !== "assetsStat");
+          observer.unobserve(entry.target);
+        }
+      });
+    }
+
+    const observer = new IntersectionObserver(handleIntersection, { root: null, threshold: 0.5 });
+    const targetElements = document.querySelectorAll('#stats h1');
+    targetElements.forEach(targetElement => observer.observe(targetElement));
+  </script>
+</body>
+
+</html>
