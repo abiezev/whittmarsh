@@ -65,6 +65,7 @@
     }
 
     @media (max-width: 768px) {
+
       /* 100vh to top padding 80px */
       .hero-section {
         padding-top: 80px;
@@ -200,6 +201,10 @@
 
     .avoid-section .container {
       width: 800px;
+    }
+
+    .offer-section {
+      overflow: hidden;
     }
 
     .offer-card {
@@ -509,6 +514,28 @@
     const observer = new IntersectionObserver(handleIntersection, { root: null, threshold: 0.5 });
     const targetElements = document.querySelectorAll('#stats h1');
     targetElements.forEach(targetElement => observer.observe(targetElement));
+
+    // Updates hero data-aos-delay attribute based on screen size
+    function setAOSDelay() {
+      const elements = document.querySelectorAll(".hero-section [data-aos-delay]");
+      let delay;
+      if (window.innerWidth < 576) {
+        delay = "200";
+      } else {
+        delay = ["400", "800", "1200", "1700"];
+      }
+
+      elements.forEach(function (element, index) {
+        if (window.innerWidth > 576) {
+          element.setAttribute('data-aos-delay', delay[index]);
+        } else {
+          element.setAttribute('data-aos-delay', delay);
+        }
+      });
+    }
+    window.addEventListener('load', setAOSDelay);
+    window.addEventListener('resize', setAOSDelay);
+
   </script>
 </body>
 
