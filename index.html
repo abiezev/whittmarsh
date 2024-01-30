@@ -244,9 +244,8 @@
       color: white;
       padding-top: 50px;
       padding-bottom: calc(50px + env(safe-area-inset-bottom));
-      width: 100%;
-      box-sizing: border-box;
-      height: -webkit-fill-available;
+      padding-bottom: calc(50px + var(--safe-area-inset-bottom));
+      padding-bottom: calc(50px + -webkit-env(safe-area-inset-bottom));
     }
   </style>
 </head>
@@ -515,10 +514,9 @@
               Therefore, Debt Markets Solutions LLC and FixedIncome.app do not assume any responsibility for trading
               losses that may occur from using this data. Debt Markets Solutions LLC, or any associated data providers,
               individuals, or businesses, will not accept any liability for any loss or damage resulting from reliance
-              on
-              the information provided on this website and platform, including data and derived metrics. It is important
-              to fully understand the risks and costs associated with trading financial markets. Debt Markets Solutions
-              LLC does not provide any warranties, including fitness for a particular purpose or use.</p>
+              on the information provided on this website and platform, including data and derived metrics. It is
+              important to fully understand the risks and costs associated with trading financial markets. Debt Markets
+              Solutions LLC does not provide any warranties, including fitness for a particular purpose or use.</p>
           </div>
         </div>
       </div>
