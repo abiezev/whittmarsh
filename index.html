@@ -38,6 +38,8 @@
       font-family: 'Nunito', sans-serif;
       background-color: #ebefe2;
       color: #3f4b36;
+      margin: 0px;
+      padding: 0px;
     }
 
     .btn,
@@ -51,7 +53,7 @@
 
     @media (min-width: 769px) {
       .hero-section {
-        height: 100vh;
+        height: calc(100vh - 156px);
       }
 
       .hero-section h1 {
@@ -66,9 +68,9 @@
 
     @media (max-width: 768px) {
 
-      /* 100vh to top padding 80px */
+      /* 100vh to top padding 40px */
       .hero-section {
-        padding-top: 80px;
+        padding-top: 40px;
       }
 
       /* 80px to 50px */
@@ -113,6 +115,13 @@
       .offer-section a {
         margin-bottom: 30px;
       }
+    }
+
+    .nav {
+      margin-top: 20px;
+      margin-right: 20px;
+      display: flex;
+      justify-content: flex-end;
     }
 
     .hero-section {
@@ -233,8 +242,9 @@
     .footer-section {
       background-color: #464745;
       color: white;
-      padding-top: 30px;
-      padding-bottom: 30px;
+      padding-top: 50px;
+      padding-bottom: 50px;
+      margin-bottom: 0px;
     }
   </style>
 </head>
@@ -243,6 +253,9 @@
 
   <!-- Hero End -->
   <section id="hero">
+    <div class="nav">
+      <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+    </div>
     <div class="container-fluid d-flex align-items-center justify-content-center">
       <div class="container hero-section">
         <div class="row align-items-center justify-content-center">
@@ -263,7 +276,7 @@
             <div class="hero-card">
               <i class="fa-solid fa-arrow-up-right-dots"></i>
               </br></br>
-              <h2>Capture preset Capital Gains</h2>
+              <h2>Capture Preset Capital Gains</h2>
             </div>
           </div>
           <div class="col-sm-6 col-md-3" data-aos="fade-right" data-aos-delay="800">
@@ -526,7 +539,7 @@
       let timer = setInterval(function () {
         current += increment;
         suffix = percent ? "%" : "";
-        obj.innerText = current.toFixed(0) + suffix;
+        obj.innerText = current.toFixed(0).replace(/\B(?=(\d{3})+(?!\d))/g, ",") + suffix;
 
         if (++counter === steps) {
           clearInterval(timer);
