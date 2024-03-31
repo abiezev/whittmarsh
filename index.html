@@ -23,18 +23,8 @@
 
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
-
+    
     <style>
-        /* 
-        Colors:
-        light: #e5eedb;
-        middle:  #c4d0b8;
-        midpoint: #828E77;
-        dark: #3f4b36;
-        highlight: #9dd67d;
-        tinr: #445c33;
-        */
-
         /* Universal Screen Size [start] */
         body {
             font-family: 'Nunito', sans-serif;
@@ -69,7 +59,6 @@
             border: none;
         }
         /* Universal Screen Size [end] */
-
 
         @media (min-width: 769px) and (max-width: 991px) {
             #hero .container {
@@ -113,19 +102,9 @@
                 display: none;
             }
 
-            #brands {
-                padding: 30px;
-                justify-content: center;
-                background-color: #c4d0b8;
-            }
-
-            #brands h3 {
-                font-size: 18px;
-                margin-bottom: 20px;
-            }
-
             #steps {
                 padding: 50px 10px;
+                background-color: #c4d0b8;
             }
 
             #steps h1 {
@@ -148,93 +127,222 @@
             }
 
             .step-number {
-                color: #9dd67d;
+                color: #c4d0b8;
                 font-size: 20px;
                 padding: 10px;
             }
 
             .step-card {
-                min-height: 180px;
-                max-height: 220px;
-                max-width: 400px;
                 margin: 16px auto;
-                border: 2px solid #9dd67d;
                 border-radius: 10px;
                 transition: background-color 0.3s ease;
-                /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
                 display: grid;
                 padding: 20px 20px;
                 font-size: 20px;
             }
 
-            #real-estate {
-                background-color: #3f4b36;
-                padding: 50px 0px;
+            #etf {
+                padding: 100px 0px;
             }
 
-            .real-estate-card {
+            #etf .etf-card {
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            #etf .etf-circle {
+                width: 120px;
+                height: 120px;
                 background-color: #c4d0b8;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            #etf i {
                 color: #3f4b36;
-                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-                border-radius: 12px;
-                margin: 20px;
+                font-size: 60px;
                 padding: 20px;
             }
 
-            .real-estate-card .row {
-                margin-bottom: 5px;
-            }
-
-            #real-estate h1 {
+            #etf h1 {
                 margin-bottom: 20px;
-                font-size: 28px;
-                color: #c4d0b8;
             }
 
-            #real-estate h2 {
-                color: #3f4b36;
-                font-size: 24px;
-                margin: 0px;
-                padding: 0px;
+            #etf p {
+                margin-bottom: 0px;
             }
 
-            #real-estate h3 {
+            #etf .remark i, #target .remark i {
                 font-size: 16px;
+                margin: 0px 10px 0px 0px;
+                padding: 0px;
+            }
+
+            #etf .remark .fa-check {
+                color:#9dd67d;
+            }
+
+            #etf .remark .fa-xmark {
+                color:#d67d7d;
+            }
+
+            #etf .remark span, #target .remark span {
+                font-size: 14px;
                 margin: 0px;
                 padding: 0px;
             }
 
-            #real-estate .emoji {
-                font-size: 26px;
+            #target {
+                padding: 100px 0px;
             }
 
-            #offer {
-                padding: 50px 50px;
+            #target h2 {
+                font-size: 50px;
             }
 
-            #offer .row {
-                margin-bottom: 26px;
-            }
-
-            #offer h1 {
-                margin: 30px;
-                font-size: 30px;
-            }
-
-            #offer h3 {
-                font-size: 22px;
+            #target h4 {
+                font-size: 32px;
                 margin: 0px;
+            }
+
+            #target .remark {
+                margin: 20px 20px;
                 padding: 0px;
             }
 
-            #offer .fa-check {
-                font-size: 20px;
+            #target b {
+                font-size: 60px;
                 color: #9dd67d;
             }
 
-            #offer .fa-xmark {
-                font-size: 20px;
+            #target .line {
+                border-left: 2px solid #9dd67d;
+                position: relative;
+                list-style: none;
+            }
+
+            #target .line .item {
+                position: relative;
+            }
+
+            #target .line .item:after {
+                position: absolute;
+                display: block;
+            }
+
+            #target .line .circle {
+                position: absolute;
+                left: -61px;
+                background-color: #9dd67d;
+                color: white;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #risks {
+                margin: 100px 0px;
+            }
+
+            #risks i {
+                font-size: 50px;
+                margin: 0px 30px;
+                color: #9dd67d;
+            }
+
+            #risks h1 {
+                margin: 0px;
+            }
+
+            #risks p {
+                font-size: 18px;
+            }
+
+            #risks h2 {
+                margin-bottom: 25px;
+            }
+
+            #risks strong {
+                color: #9dd67d;
+            }
+
+            #risks .bar {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+
+            #risks .bar-end {
+                padding-left: 0px;
+            }
+
+            #risk-conclusion {
+                background-color: #3f4b36;
+                padding: 80px;
+                color: #9dd67d;
+                text-align: center;
+            }
+
+            #risk-conclusion h1 {
+                font-size: 40px;
+            }
+
+            #tech {
+                padding: 100px;
+            }
+
+            #tech .tech-card {  
+                max-height: 300px;              
+                background-color: #c4d0b8;
+                padding: 10px 25px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            #tech i {
+                font-size: 40px;
+                margin: 20px 0px;
+                display: flex;
+                justify-content: center;
+            }
+
+            #tech h2 {
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 28px;
+            }
+
+            #disclaimer .disclaimer-card {
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            #disclaimer i {
                 color: #d67d7d;
+                font-size: 40px;
+                margin: 0px 20px;
+                display: flex;
+                justify-content: center;
+
+            }
+
+            #disclaimer p {
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 22px;
             }
 
             #signup {
@@ -249,8 +357,8 @@
             #signup h1 {
                 font-size: 32px;
             }
-        }
 
+        }
         @media (min-width: 992px) {
             #hero .container {
                 margin-top: 100px;
@@ -292,17 +400,9 @@
                 display: none;
             }
 
-            #brands {
-                padding: 100px;
-                background-color: #c4d0b8;
-            }
-
-            #brands h3 {
-                margin-bottom: 40px;
-            }
-
             #steps {
-                padding: 100px;
+                padding: 80px;
+                background-color: #c4d0b8;
             }
             
             #steps h2 {
@@ -321,92 +421,227 @@
             }
 
             .step-number {
-                color: #9dd67d;
+                color: #c4d0b8;
                 font-size: 32px;
                 padding: 20px;
             }
 
             .step-card {
-                min-height: 180px;
-                max-height: 220px;
-                max-width: 400px;
-                margin: 30px auto;
-                border: 2px solid #9dd67d;
+                margin: 20px auto;
                 border-radius: 10px;
                 transition: background-color 0.3s ease;
-                /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
                 display: grid;
-                padding: 30px 30px;
+                padding: 20px 20px;
                 font-size: 20px;
             }
-
-            #real-estate {
-                background-color: #3f4b36;
-                padding: 100px;
+            
+            #etf {
+                padding: 100px 0px;
             }
 
-            .real-estate-card {
+            #etf .etf-card {
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            #etf .etf-circle {
+                width: 120px;
+                height: 120px;
                 background-color: #c4d0b8;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            #etf i {
                 color: #3f4b36;
-                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-                border-radius: 12px;
-                margin: 20px;
+                font-size: 60px;
                 padding: 20px;
             }
 
-            .real-estate-card .row {
-                margin-bottom: 5px;
-            }
-
-            #real-estate h1 {
+            #etf h1 {
                 margin-bottom: 20px;
+            }
+
+            #etf p {
+                margin-bottom: 0px;
+            }
+
+            #etf .remark i, #target .remark i {
+                font-size: 16px;
+                margin: 0px 10px 0px 0px;
+                padding: 0px;
+            }
+
+            #etf .remark .fa-check {
+                color:#9dd67d;
+            }
+
+            #etf .remark .fa-xmark {
+                color:#d67d7d;
+            }
+
+            #etf .remark span, #target .remark span {
+                font-size: 14px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #target {
+                padding: 100px 0px;
+            }
+
+            #target h2 {
+                font-size: 50px;
+            }
+
+            #target h4 {
                 font-size: 32px;
-                color: #c4d0b8;
+                margin: 0px;
             }
 
-            #real-estate h2 {
-                color: #3f4b36;
-                margin: 0px;
+            #target .remark {
+                margin: 20px 20px;
                 padding: 0px;
             }
 
-            #real-estate h3 {
-                font-size: 20px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #real-estate .emoji {
-                font-size: 30px;
-            }
-
-            #offer {
-                padding: 80px;
-            }
-
-            #offer .row {
-                margin-bottom: 26px;
-            }
-
-            #offer h1 {
-                margin: 30px;
-                font-size: 30px;
-            }
-
-            #offer h3 {
-                font-size: 24px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #offer .fa-check {
-                font-size: 30px;
+            #target b {
+                font-size: 60px;
                 color: #9dd67d;
             }
 
-            #offer .fa-xmark {
-                font-size: 30px;
+            #target .line {
+                border-left: 2px solid #9dd67d;
+                position: relative;
+                list-style: none;
+            }
+
+            #target .line .item {
+                position: relative;
+            }
+
+            #target .line .item:after {
+                position: absolute;
+                display: block;
+            }
+
+            #target .line .circle {
+                position: absolute;
+                left: -61px;
+                background-color: #9dd67d;
+                color: white;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #risks {
+                margin: 100px 0px;
+            }
+
+            #risks i {
+                font-size: 50px;
+                margin: 0px 30px;
+                color: #9dd67d;
+            }
+
+            #risks h1 {
+                margin: 0px;
+            }
+
+            #risks p {
+                font-size: 18px;
+            }
+
+            #risks h2 {
+                margin-bottom: 25px;
+            }
+
+            #risks strong {
+                color: #9dd67d;
+            }
+
+            #risks .bar {
+                border-right: 1px solid #9dd67d;
+                padding-right: 30px;
+                padding-left: 30px;
+            }
+
+            #risks .bar-end {
+                padding-left: 30px;
+            }
+
+            #risk-conclusion {
+                background-color: #3f4b36;
+                padding: 80px;
+                color: #9dd67d;
+                text-align: center;
+            }
+
+            #risk-conclusion h1 {
+                max-width: 895px;
+                font-size: 40px;
+            }
+
+            #tech {
+                padding: 100px;
+            }
+
+            #tech .tech-card {  
+                display: flex;
+                flex-direction: column;
+                height: 100%;
+                background-color: #c4d0b8;
+                padding: 25px;
+                border-radius: 10px;
+            }
+
+            #tech i {
+                font-size: 50px;
+                margin: 20px 0px;
+                display: flex;
+                justify-content: center;
+            }
+
+            #tech h2 {
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 28px;
+            }
+
+            #disclaimer {
+                padding: 100px;
+                padding-top: 0px;
+            }
+
+            #disclaimer .disclaimer-card {
+                padding: 25px;
+                border-radius: 10px;
+            }
+
+            #disclaimer i {
                 color: #d67d7d;
+                font-size: 50px;
+                margin: 20px 0px;
+                display: flex;
+                justify-content: center;
+            }
+
+            #disclaimer p {
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 24px;
             }
 
             #signup {
@@ -456,19 +691,9 @@
                 display: none;
             }
 
-            #brands {
-                padding: 30px;
-                justify-content: center;
-                background-color: #c4d0b8;
-            }
-
-            #brands h3 {
-                font-size: 18px;
-                margin-bottom: 20px;
-            }
-
             #steps {
                 padding: 50px 10px;
+                background-color: #c4d0b8;
             }
 
             #steps h1 {
@@ -480,6 +705,7 @@
             }
 
             .step-circle {
+                margin-right: 15px;
                 width: 40px;
                 height: 40px;
                 background-color: #3f4b36;
@@ -491,96 +717,234 @@
             }
 
             .step-number {
-                color: #9dd67d;
+                color: #c4d0b8;
                 font-size: 20px;
                 padding: 10px;
             }
 
             .step-card {
-                min-height: 180px;
-                max-height: 220px;
-                max-width: 400px;
-                margin: 16px auto;
-                border: 2px solid #9dd67d;
                 border-radius: 10px;
                 transition: background-color 0.3s ease;
-                /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
-                display: grid;
+                display: flex;
+                align-items: center;
                 padding: 20px 20px;
                 font-size: 20px;
             }
 
-            #real-estate {
-                background-color: #3f4b36;
+            #etf {
                 padding: 50px 0px;
             }
 
-            .real-estate-card {
+            #etf .etf-card {
+                margin: 20px auto;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                padding: 20px;
+                font-size: 20px;
+                text-align: center;
+            }
+
+            #etf .etf-circle {
+                width: 90px;
+                height: 90px;
                 background-color: #c4d0b8;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            #etf i {
                 color: #3f4b36;
-                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
-                border-radius: 12px;
-                margin: 20px;
+                font-size: 40px;
                 padding: 20px;
             }
 
-            .real-estate-card .row {
-                margin-bottom: 5px;
-            }
-
-            #real-estate h1 {
-                margin-bottom: 20px;
-                font-size: 28px;
-                color: #c4d0b8;
-            }
-
-            #real-estate h2 {
-                color: #3f4b36;
-                font-size: 28px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #real-estate h3 {
-                font-size: 20px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #real-estate .emoji {
-                font-size: 30px;
-            }
-
-            #offer {
-                padding-top: 50px;
-                padding-bottom: 24px;
-                padding-right: 20px;
-                padding-left: 20px;
-            }
-
-            #offer .row {
-                margin-bottom: 26px;
-            }
-
-            #offer h1 {
+            #etf h1 {
+                font-size: 32px;
                 margin: 30px;
-                font-size: 30px;
+                text-align: center;
             }
 
-            #offer h3 {
+            #etf p {
+                margin-bottom: 0px;
+            }
+
+            #etf .remark i, #target .remark i {
                 font-size: 16px;
+                margin: 0px 10px 0px 0px;
+                padding: 0px;
+            }
+
+            #etf .remark .fa-check {
+                color:#9dd67d;
+            }
+
+            #etf .remark .fa-xmark {
+                color:#d67d7d;
+            }
+
+            #etf .remark span, #target .remark span {
+                font-size: 14px;
                 margin: 0px;
                 padding: 0px;
             }
 
-            #offer .fa-check {
-                font-size: 20px;
+            #target {
+                padding: 50px 0px;
+                margin: 0px 30px;
+            }
+
+            #target h2 {
+                font-size: 30px;
+                margin-bottom: 50px;
+            }
+
+            #target h4 {
+                font-size: 28px;
+                margin: 0px;
+            }
+
+            #target .remark {
+                margin: 20px 20px;
+                padding: 0px;
+            }
+
+            #target b {
+                font-size: 36px;
                 color: #9dd67d;
             }
 
-            #offer .fa-xmark {
-                font-size: 20px;
+            #target .line {
+                border-left: 2px solid #9dd67d;
+                position: relative;
+                list-style: none;
+            }
+
+            #target .line .item {
+                position: relative;
+            }
+
+            #target .line .item:after {
+                position: absolute;
+                display: block;
+            }
+
+            #target .line .circle {
+                position: absolute;
+                left: -61px;
+                background-color: #9dd67d;
+                color: white;
+                border-radius: 50%;
+                height: 40px;
+                width: 40px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+
+            #risks {
+                margin: 50px 30px;
+            }
+
+            #risks i {
+                display: none;
+                font-size: 40px;
+                margin: 0px 0px;
+                color: #9dd67d;
+            }
+
+            #risks h1 {
+                font-size: 32px;
+                margin: 0px;
+            }
+
+            #risks p {
+                font-size: 18px;
+            }
+
+            #risks h2 {
+                margin: 25px 0px;
+            }
+
+            #risks strong {
+                color: #9dd67d;
+            }
+
+            #risks .bar {
+                padding-right: 0px;
+                padding-left: 0px;
+            }
+
+            #risks .bar-end {
+                padding-left: 0px;
+            }
+
+            #risk-conclusion {
+                background-color: #3f4b36;
+                padding: 50px 10px;
+                color: #9dd67d;
+                text-align: center;
+            }
+
+            #risk-conclusion h1 {
+                font-size: 28px;
+            }
+
+            #tech {
+                padding: 50px 20px;
+            }
+
+            #tech .tech-card {  
+                max-height: 300px;              
+                background-color: #c4d0b8;
+                padding: 10px 10px;
+                border-radius: 10px;
+                margin-bottom: 20px;
+            }
+
+            #tech i {
+                font-size: 30px;
+                margin: 10px 0px;
+                display: flex;
+                justify-content: center;
+            }
+
+            #tech h1 {
+                font-size: 32px;
+            }
+
+            #tech h2 {
+                margin: 20px 0px;
+                text-align: center;
+                font-size: 25px;
+            }
+
+            #disclaimer .disclaimer-card {
+                padding: 10px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+            }
+
+            #disclaimer h1 {
+                font-size: 32px;
+            }
+
+            #disclaimer i {
                 color: #d67d7d;
+                font-size: 40px;
+                margin: 0px 20px;
+
+            }
+
+            #disclaimer p {
+                margin: 20px 0px;
+                text-align: start;
+                font-size: 20px;
             }
 
             #signup {
@@ -597,55 +961,8 @@
             }
         }
     </style>
-    <!-- Styles for company icons -->
-    <style>
-    @keyframes scroll {
-        0% {transform: translateX(0); }
-        100% {
-            transform: translateX(-268%);
-        }
-    }
-
-    .carousel-width {
-        width: 800px;
-        overflow: hidden;
-    }
-
-    .carousel {
-        width: 800px;
-        white-space: nowrap;
-        position: relative;
-        animation: scroll 60s linear infinite;
-    }
-
-    .brand {
-        display: inline-block;
-        position: relative;
-        width: 100px;
-        height: auto;
-        margin-right: 30px;
-    }
-
-    .logo-position {
-        position: relative;
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        overflow: hidden;
-        border-radius: 20px;
-    }
-
-    img {
-        width: 100%;
-        height: auto;
-        border-radius: 20px;
-        opacity: 0.7;
-    }
-</style>
-
-
-    
 </head>
+
 <body>
     <!-- Hero Start -->
     <section id="hero">
@@ -657,15 +974,15 @@
             <p>Make Passive Income with Fixed-Income</p>
             <div class="row justify-content-center">
                 <div class="col-sm-12 col-md-auto">
-                    <i class="fas fa-check"></i><span>5-7% Annual Yield</span>
+                    <i class="fas fa-check"></i><span>5-9% Annual Yield</span>
                 </div>
                 <div class="spacer"></div>
                 <div class="col-sm-12 col-md-auto">
-                    <i class="fas fa-check"></i><span>Prebuilt Income Streams</span>    
+                    <i class="fas fa-check"></i><span>Prebuilt Income Plans</span>    
                 </div>
                 <div class="spacer"></div>
                 <div class="col-sm-12 col-md-auto">
-                    <i class="fas fa-check"></i><span>Custom Income Streams</span>
+                    <i class="fas fa-check"></i><span>Customizable Income Builder</span>
                 </div>
             </div>
             <div class="row justify-content-center" data-aos="fade-right" data-aos-delay="1000">
@@ -675,49 +992,11 @@
     </section>
     <!-- Hero End -->
 
-    <!-- Brands Start -->
-    <section id="brands" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-        <div class="container">
-            <div class="row justify-content-center">
-                <h3>Get paid by the brands you love and trust</h3>
-            </div>
-            <div class="row justify-content-center">
-                <div class="carousel-width">
-                    <div class="carousel">
-                        <div class="brand"><div class="logo-position"><img src="./images/amazon.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/apple.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/nvidia.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/google.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/microsoft.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/abb.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/coca-cola.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/costco.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/jnj.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/jpmorgan.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/lilly.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/gs.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/netflix.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/wellsfargo.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/pg.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/toyota.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/asml.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/tsmc.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/starbucks.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/mastercard.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/broadcom.png" alt="Company"></div></div>
-                        <div class="brand"><div class="logo-position"><img src="./images/adobe.png" alt="Company"></div></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Brands End -->
-
     <!-- Steps Start -->
     <section id="steps" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
         <div class="container">
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                <h1>3 Steps to Passive Income</h1>
+                <h1>3 Easy Steps to Passive Income</h1>
             </div>
             <div class="row">
                 <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="100">
@@ -745,188 +1024,254 @@
                     </div>
                 </div>
             </div>
-            <br><br>
-            <div class="row justify-content-center" data-aos="fade-right" data-aos-delay="500">
-                <a href="#" class="btn btn-lg">Get Access - $150/yr</a>
-            </div>
         </div>
     </section>
     <!-- Steps End -->
 
-    <!-- Real Estate Start -->
-    <section id="real-estate" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+    <!-- Target Start -->
+    <section id="target" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
         <div class="container">
-            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-                <h1>Fixed-Income vs Real Estate</h1>
-            </div>
             <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <div class="real-estate-card" data-aos="fade-up" data-aos-delay="100">
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#x1F4B5;</span>
-                            <span class="ml-3"></span>
-                            <h2>Fixed-Income</h2>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>100% passive</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>1 hour of upfront work</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>Liquid</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>No leverage</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>Can avoid market volatility</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>No additional obligations</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Lower yield</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Low capital gains potential</h3>
-                        </div>
-                    </div>
+                <div class="col-md-6 col-lg-4 col-sm-12">
+                    <h2><b>Target investment outcomes</b> with prebuilt or custom income plans<h2>
                 </div>
-                <div class="col-sm-12 col-md-6">
-                    <div class="real-estate-card" data-aos="fade-up" data-aos-delay="300">
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#127968;</span>
-                            <span class="ml-3"></span>
-                            <h2>Real Estate</h2>
-                        </div>
-                        
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Partially passive</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Months of upfront work</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Not liquid</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Requires leverage</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>Cannot avoid market volatility</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128532;</span>
-                            <span class="ml-3"></span>
-                            <h3>On the hook for mortgage</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>Higher yield</h3>
-                        </div>
-                        <div class="row align-items-center">
-                            <span class="ml-3"></span>
-                            <span class="emoji">&#128512;</span>
-                            <span class="ml-3"></span>
-                            <h3>High capital gains potential</h3>
-                        </div>
-                    </div>
+                <div class="col-md-6 offset-lg-2 col-lg-6 col-sm-12">
+                    <ul class="line">
+                        <li class="item">
+                            <span class="circle">1</span>
+                            <h3>Target Credit Quality or Yield</h3>
+                            <div class="remark">
+                                <h5>Investment Grade</h5>
+                                <span>Get paid by the highest quality companies</span>
+                            </div>
+                            <div class="remark">
+                                <h5>High Yield</h5>
+                                <span>Target returns up to 9%</span>
+                            </div>
+                        </li>
+                
+                        <li class="item">
+                            <span class="circle">2</span>
+                            <h3>Target Income or Cash Flow</h3>
+                            <div class="remark">
+                                <h5>Income Stream</h5>
+                                <span>Recieve monthly income payments and principal is returned at the end of the investment period</span>
+                            </div>
+                            <div class="remark">
+                                <h5>Cash Flow</h5>
+                                <span>Ensures you have access to cash on a scheduled frequency throughout the investment period</span>
+                            </div>
+                        </li>
+                    
+                        <li class="item">
+                            <span class="circle">3</span>
+                            <h3>Target Liquidity or Time Horizon</h3>
+                            <div class="remark">
+                                <h5>Time Horizon</h5>
+                                <span>Set your income stream investment period</span>
+                            </div>
+                            <div class="remark">
+                                <h5>Liquidity</h5>
+                                <span>Set your cash flow liquidity frequency</span>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </div>
     </section>
-    <!-- Real Estate End -->
+    <!-- Target End -->
 
-
-    <!-- Offer Start -->
-    <section id="offer" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+    <!-- ETF Start -->
+    <section id="etf" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
         <div class="container">
-            <h1>What's Included</h1>
-            <div class="row align-items-center">
-                <span class="ml-3"></span>
-                <i class="fa-solid fa-check"></i>
-                <span class="ml-3"></span>
-                <h3>Prebuilt passive income streams</h3>
+            <div class="row justify-content-center">
+                <h1>Fixed-Income Bonds vs Income ETFs</h1>
             </div>
-            <div class="row align-items-center">
-                <span class="ml-3"></span>
-                <i class="fa-solid fa-check"></i>
-                <span class="ml-3"></span>
-                <h3>Custom passive income stream builder</h3>
-            </div>
-            <div class="row align-items-center">
-                <span class="ml-3"></span>
-                <i class="fa-solid fa-check"></i>
-                <span class="ml-3"></span>
-                <h3>Income stream tracking & notifications</h3>
-            </div>
-            <h1>What's Not Included</h1>
-            <div class="row align-items-center">
-                <span class="ml-3"></span>
-                <i class="fa-solid fa-xmark"></i>
-                <span class="ml-3"></span>
-                <h3>This is not financial or investment advice</h3>
-            </div>
-            <div class="row align-items-center">
-                <span class="ml-3"></span>
-                <i class="fa-solid fa-xmark"></i>
-                <span class="ml-3"></span>
-                <h3>We do not gaurentee investment outcomes</h3>
-            </div>
-            <div class="row align-items-center">
-                <span class="ml-3"></span>
-                <i class="fa-solid fa-xmark"></i>
-                <span class="ml-3"></span>
-                <h3>Bonds are bought at online-brokers, not here</h3>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="etf-card">
+                        <div class="etf-circle">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+                        <p>Reliable Income</p>
+                        <div class="remark">
+                            <i class="fas fa-check"></i><span>Fixed-income bonds have fixed rates</span>
+                        </div>
+                        <div class="remark">
+                            <i class="fas fa-xmark"></i><span>ETF dividends are constantly changing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="etf-card">
+                        <div class="etf-circle">
+                            <i class="fa-solid fa-money-check-dollar"></i>
+                        </div>
+                        <p>Preserves Invested Capital</p>
+                        <div class="remark">
+                            <i class="fas fa-check"></i><span>Bonds are repaid at par value</span>
+                        </div>
+                        <div class="remark">
+                            <i class="fas fa-xmark"></i><span>ETF returns are subject to market timing</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="etf-card">
+                        <div class="etf-circle">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <p>Locks in Returns</p>
+                        <div class="remark">
+                            <i class="fas fa-check"></i><span>Bonds returns are known</span>
+                        </div>
+                        <div class="remark">
+                            <i class="fas fa-xmark"></i><span>ETF returns are unknown</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="etf-card">
+                        <div class="etf-circle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <p>Shields from Rate Changes</p>
+                        <div class="remark">
+                            <i class="fas fa-check"></i><span>Bonds held to maturity are unaffected</span>
+                        </div>
+                        <div class="remark">
+                            <i class="fas fa-xmark"></i><span>ETFs are sensitive to interest rates</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-sm-12">
+                    <div class="etf-card">
+                        <div class="etf-circle">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <p>Unaffected by Market Fluctuations</p>
+                        <div class="remark">
+                            <i class="fas fa-check"></i><span>Bonds held to maturity are repaid by issuer</span>
+                        </div>
+                        <div class="remark">
+                            <i class="fas fa-xmark"></i><span>ETFs are exposed to the market volatility</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
-    <!-- Offer End -->
+    <!-- ETF End -->
+
+    <!-- Risks Start -->
+    <section id="risks" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <i class="fa-solid fa-triangle-exclamation"></i><h1>Managing Key Risks</h1><i class="fa-solid fa-triangle-exclamation"></i>
+            </div>
+            <br>
+            <br>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-12 bar">
+                    <h2>Market Risk</h2>
+                    <p>At maturity, bonds are repaid by the issuer. We construct maturity ladders to match your liquidity needs, ensuring repayment by issuers and removing the need to resell in the market to completely avoid market risk.</p>
+                    <p><strong>Risk is avoided</strong></p>
+                </div>
+                <div class="col-lg-4 col-sm-12 bar">
+                    <h2>Interest Rate Risk</h2>
+                    <p>By investing in uncallable fixed-income bonds, the interest rates are fixed at the time of purchase and remain unchanged until maturity. This shields you from any fluctuations in interest rates.</p>
+                    <p><strong>Risk is avoided</strong></p>
+                </div>
+                <div class="col-lg-4 col-sm-12 bar-end">
+                    <h2>Default Risk</h2>
+                    <p>To minimize default risk, we offer income plans based on issuer credit quality, along with issuer financial data including debt ratios, profitability ratios, and interest coverage metrics for your evaluation.</p>
+                    <p><strong>Risk is minimized</strong></p>
+                </div>
+            </div>
+            <br>
+            <br>
+        </div>
+    </section>
+
+    <section id="risk-conclusion" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="d-flex flex-column align-items-center justify-content-center">
+                <h1>Our method helps you avoid market chaos, secure reliable income, and safeguard your capital.</h1>
+                <br><br>
+                <div data-aos="fade-right" data-aos-delay="200">
+                    <a href="#" class="btn btn-lg">Get Access - $150/yr</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Risks End -->
+
+    <!-- Tech Start -->
+    <section id="tech" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <h1>What's Included</h1>
+            </div>
+            <br>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="tech-card">
+                        <i class="fas fa-list"></i>
+                        <h2>Prebuilt Income Plans</h2>
+                        <p>These plans include preselected bonds that target outcomes, including credit quality, yield, liquidity, and time horizon. This makes it easy for you to get an income stream up and running quickly.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="tech-card">
+                        <i class="fas fa-sliders"></i>
+                        <h2>Custom Income Builder</h2>
+                        <p>This tool provides you with the list of available bonds that meet your target criteria, providing you flexibility to invest in what you want while still keeping you aligned to your target.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="tech-card">
+                        <i class="fa-regular fa-bell"></i>
+                        <h2>Tracking & Notifications</h2>
+                        <p>After saving your plan, we assist you in monitoring its progress and guide you in reinvesting maturing bonds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tech End -->
+
+    <!-- Disclaimer Start -->
+    <section id="disclaimer" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row justify-content-center align-items-center">
+                <h1>What's Not Included</h1>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-sm-12">
+                    <div class="disclaimer-card">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        <p>This is not financial advice nor investment advice</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="disclaimer-card">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        <p>We do not gaurentee investment outcomes</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                    <div class="disclaimer-card">
+                        <i class="fa-regular fa-circle-xmark"></i>
+                        <p>Bonds are bought at online-brokers, not here</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Tech End -->
+
 
     <!-- Sign Up Start -->
     <section id="signup" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
@@ -938,9 +1283,9 @@
             </div>
         </div>
     </section>
-  <!-- Sign Up End -->
+    <!-- Sign Up End -->
 
-     <!-- Footer Start -->
+    <!-- Footer Start -->
     <section id="footer">
         <footer class="footer footer-section">
             <div class="container">
@@ -967,6 +1312,7 @@
         </footer>
     </section>
     <!-- Footer End -->
+
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>

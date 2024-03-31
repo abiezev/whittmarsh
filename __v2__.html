@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passive Income in 1 hour</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="description" content="Make Passive Income with Fixed-Income">
+    <meta name="keywords"
+        content="passive income, fixed income, money, cash, income, investing, income investing, cash flows, cash flow, bond investing, fixed income investing, fixed-income, bond markets, bonds, debt markets, debt">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <style>
+        /* 
+        Colors:
+        light: #e5eedb;
+        middle:  #c4d0b8;
+        midpoint: #828E77;
+        dark: #3f4b36;
+        highlight: #9dd67d;
+        tinr: #445c33;
+        */
+
+        /* Universal Screen Size [start] */
+        body {
+            font-family: 'Nunito', sans-serif;
+            background-color: #e5eedb;
+            color: #3f4b36;
+            margin: 0px;
+            padding: 0px;
+        }
+
+        .footer-section {
+            background-color: #222222;
+            color: white;
+            padding-top: 50px;
+            padding-bottom: calc(50px + env(safe-area-inset-bottom));
+            padding-bottom: calc(50px + var(--safe-area-inset-bottom));
+            padding-bottom: calc(50px + -webkit-env(safe-area-inset-bottom));
+        }
+
+        .nav {
+            margin-top: 20px;
+            margin-right: 20px;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .btn,
+        .btn:hover,
+        .btn:active,
+        .btn:focus {
+            background-color: #9dd67d;
+            color: #3f4b36;
+            border: none;
+        }
+        /* Universal Screen Size [end] */
+
+
+        @media (min-width: 769px) and (max-width: 991px) {
+            #hero .container {
+                margin-top: 100px;
+            }
+
+            #hero h1 {
+                margin-top: 20px;
+                font-size: 60px;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+
+            #hero br {
+                display: block;
+            }
+
+            #hero p {
+                font-size: 28px;
+                margin-bottom: 20px;
+            }
+
+            #hero .row a {
+                margin-top: 50px;
+                margin-bottom: 80px;
+            }
+
+            #hero i {
+                color:#9dd67d;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            #hero span {
+                font-size: 14px;
+                margin-bottom: 100px;
+            }
+
+            #hero .spacer {
+                margin-right: 0px;
+                display: none;
+            }
+
+            #brands {
+                padding: 30px;
+                justify-content: center;
+                background-color: #c4d0b8;
+            }
+
+            #brands h3 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            #steps {
+                padding: 50px 10px;
+            }
+
+            #steps h1 {
+                font-size: 26px;
+            }
+            
+            #steps h2 {
+                font-size: 26px;
+            }
+
+            .step-circle {
+                width: 40px;
+                height: 40px;
+                background-color: #3f4b36;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .step-number {
+                color: #9dd67d;
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .step-card {
+                min-height: 180px;
+                max-height: 220px;
+                max-width: 400px;
+                margin: 16px auto;
+                border: 2px solid #9dd67d;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+                /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
+                display: grid;
+                padding: 20px 20px;
+                font-size: 20px;
+            }
+
+            #comparison {
+                background-color: #3f4b36;
+                padding: 50px 0px;
+            }
+
+            .comparison-card {
+                background-color: #c4d0b8;
+                color: #3f4b36;
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .comparison-card .row {
+                margin-bottom: 5px;
+            }
+
+            #comparison h1 {
+                margin-bottom: 20px;
+                font-size: 28px;
+                color: #c4d0b8;
+            }
+
+            #comparison h2 {
+                color: #3f4b36;
+                font-size: 24px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #comparison h3 {
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #comparison .emoji {
+                font-size: 26px;
+            }
+
+            #offer {
+                padding: 50px 50px;
+            }
+
+            #offer .row {
+                margin-bottom: 26px;
+            }
+
+            #offer h1 {
+                margin: 30px;
+                font-size: 30px;
+            }
+
+            #offer h3 {
+                font-size: 22px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #offer .fa-check {
+                font-size: 20px;
+                color: #9dd67d;
+            }
+
+            #offer .fa-xmark {
+                font-size: 20px;
+                color: #d67d7d;
+            }
+
+            #signup {
+                display: flex;
+                height: 300px;
+                margin-top: 50px;
+                background-color: #3f4b36;
+                color: #9dd67d;
+                padding: 0px 30px;
+            }
+
+            #signup h1 {
+                font-size: 32px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #hero .container {
+                margin-top: 100px;
+            }
+
+            #hero h1 {
+                font-size: 80px;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+
+            #hero br {
+                display: block;
+            }
+
+            #hero p, #steps h1 {
+                font-size: 32px;
+                margin-bottom: 5px;
+            }
+
+            #hero .row a {
+                margin-top: 60px;
+                margin-bottom: 100px;
+            }
+
+            #hero i {
+                color:#9dd67d;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            #hero span {
+                font-size: 14px;
+                margin-bottom: 100px;
+            }
+
+            #hero .spacer {
+                margin-right: 0px;
+                display: none;
+            }
+
+            #brands {
+                padding: 100px;
+                background-color: #c4d0b8;
+            }
+
+            #brands h3 {
+                margin-bottom: 40px;
+            }
+
+            #steps {
+                padding: 100px;
+            }
+            
+            #steps h2 {
+                font-size: 26px;
+            }
+
+            .step-circle {
+                width: 60px;
+                height: 60px;
+                background-color: #3f4b36;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .step-number {
+                color: #9dd67d;
+                font-size: 32px;
+                padding: 20px;
+            }
+
+            .step-card {
+                min-height: 180px;
+                max-height: 220px;
+                max-width: 400px;
+                margin: 30px auto;
+                border: 2px solid #9dd67d;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+                /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
+                display: grid;
+                padding: 30px 30px;
+                font-size: 20px;
+            }
+
+            .comparison-circle {
+                width: 120px;
+                height: 120px;
+                background-color: #c4d0b8;
+                border-radius: 50%;
+                display: grid;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+            }
+
+            .comparison-circle i {
+                color: #3f4b36;
+                font-size: 60px;
+                padding: 20px;
+            }
+
+            .comparison-card {
+                height: 200px;
+                max-width: 400px;
+                margin: 30px auto;
+                display: grid;
+                padding: 30px 30px;
+                font-size: 20px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            #comparison {
+                padding: 100px;
+            }
+
+            #comparison h1 {
+                margin-bottom: 20px;
+                font-size: 32px;
+                color: #c4d0b8;
+            }
+
+            #comparison h2 {
+                color: #3f4b36;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #comparison h3 {
+                font-size: 20px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #offer {
+                padding: 80px;
+            }
+
+            #offer .row {
+                margin-bottom: 26px;
+            }
+
+            #offer h1 {
+                margin: 30px;
+                font-size: 30px;
+            }
+
+            #offer h3 {
+                font-size: 24px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #offer .fa-check {
+                font-size: 30px;
+                color: #9dd67d;
+            }
+
+            #offer .fa-xmark {
+                font-size: 30px;
+                color: #d67d7d;
+            }
+
+            #signup {
+                display: flex;
+                height: 400px;
+                margin-top: 50px;
+                background-color: #3f4b36;
+                color: #9dd67d;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #hero h1 {
+                margin-top: 100px;
+                font-size: 48px;
+                font-weight: 600;
+                margin-bottom: 25px;
+            }
+
+            #hero br {
+                display: none;
+            }
+
+            #hero p {
+                font-size: 20px;
+                margin-bottom: 20px;
+            }
+
+            #hero .row a {
+                margin-bottom: 60px;
+                margin-top: 40px;
+            }
+
+            #hero i {
+                color:#9dd67d;
+                font-size: 18px;
+                margin-right: 10px;
+            }
+
+            #hero span {
+                font-size: 14px;
+                margin-bottom: 100px;
+            }
+
+            #hero .spacer {
+                margin-right: 0px;
+                display: none;
+            }
+
+            #brands {
+                padding: 30px;
+                justify-content: center;
+                background-color: #c4d0b8;
+            }
+
+            #brands h3 {
+                font-size: 18px;
+                margin-bottom: 20px;
+            }
+
+            #steps {
+                padding: 50px 10px;
+            }
+
+            #steps h1 {
+                font-size: 26px;
+            }
+            
+            #steps h2 {
+                font-size: 26px;
+            }
+
+            .step-circle {
+                width: 40px;
+                height: 40px;
+                background-color: #3f4b36;
+                border-radius: 50%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 10px;
+            }
+
+            .step-number {
+                color: #9dd67d;
+                font-size: 20px;
+                padding: 10px;
+            }
+
+            .step-card {
+                min-height: 180px;
+                max-height: 220px;
+                max-width: 400px;
+                margin: 16px auto;
+                border: 2px solid #9dd67d;
+                border-radius: 10px;
+                transition: background-color 0.3s ease;
+                /* box-shadow: 0 0 25px rgba(0, 0, 0, 0.1); */
+                display: grid;
+                padding: 20px 20px;
+                font-size: 20px;
+            }
+
+            #comparison {
+                background-color: #3f4b36;
+                padding: 50px 0px;
+            }
+
+            .comparison-card {
+                background-color: #c4d0b8;
+                color: #3f4b36;
+                box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+                border-radius: 12px;
+                margin: 20px;
+                padding: 20px;
+            }
+
+            .comparison-card .row {
+                margin-bottom: 5px;
+            }
+
+            #comparison h1 {
+                margin-bottom: 20px;
+                font-size: 28px;
+                color: #c4d0b8;
+            }
+
+            #comparison h2 {
+                color: #3f4b36;
+                font-size: 28px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #comparison h3 {
+                font-size: 20px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #comparison .fa-check {
+                font-size: 30px;
+                color: #9dd67d;
+            }
+
+            #comparison .fa-xmark {
+                font-size: 30px;
+                color: #d67d7d;
+            }
+
+            #offer {
+                padding-top: 50px;
+                padding-bottom: 24px;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+
+            #offer .row {
+                margin-bottom: 26px;
+            }
+
+            #offer h1 {
+                margin: 30px;
+                font-size: 30px;
+            }
+
+            #offer h3 {
+                font-size: 16px;
+                margin: 0px;
+                padding: 0px;
+            }
+
+            #offer .fa-check {
+                font-size: 20px;
+                color: #9dd67d;
+            }
+
+            #offer .fa-xmark {
+                font-size: 20px;
+                color: #d67d7d;
+            }
+
+            #signup {
+                display: flex;
+                height: 300px;
+                margin-top: 50px;
+                background-color: #3f4b36;
+                color: #9dd67d;
+                padding: 0px 30px;
+            }
+
+            #signup h1 {
+                font-size: 32px;
+            }
+        }
+    </style>
+    <!-- Styles for company icons -->
+    <style>
+    @keyframes scroll {
+        0% {transform: translateX(0); }
+        100% {
+            transform: translateX(-268%);
+        }
+    }
+
+    .carousel-width {
+        width: 800px;
+        overflow: hidden;
+    }
+
+    .carousel {
+        width: 800px;
+        white-space: nowrap;
+        position: relative;
+        animation: scroll 60s linear infinite;
+    }
+
+    .brand {
+        display: inline-block;
+        position: relative;
+        width: 100px;
+        height: auto;
+        margin-right: 30px;
+    }
+
+    .logo-position {
+        position: relative;
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 20px;
+        opacity: 0.7;
+    }
+</style>
+
+
+    
+</head>
+<body>
+    <!-- Hero Start -->
+    <section id="hero">
+        <div class="nav">
+            <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+        </div>
+        <div class="container text-center">
+            <h1>Build a Passive Income <br>Stream in 1 hour</h1>
+            <p>Make Passive Income with Fixed-Income</p>
+            <div class="row justify-content-center">
+                <div class="col-sm-12 col-md-auto">
+                    <i class="fas fa-check"></i><span>5-8% Annual Yield</span>
+                </div>
+                <div class="spacer"></div>
+                <div class="col-sm-12 col-md-auto">
+                    <i class="fas fa-check"></i><span>Prebuilt Income Streams</span>    
+                </div>
+                <div class="spacer"></div>
+                <div class="col-sm-12 col-md-auto">
+                    <i class="fas fa-check"></i><span>Custom Income Streams</span>
+                </div>
+            </div>
+            <div class="row justify-content-center" data-aos="fade-right" data-aos-delay="1000">
+                <a href="#" class="btn btn-lg">Get Access - $150/yr</a>
+            </div>
+        </div>
+    </section>
+    <!-- Hero End -->
+
+    <!-- Brands Start -->
+    <section id="brands" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h3>Get paid by the brands you love and trust</h3>
+            </div>
+            <div class="row justify-content-center">
+                <div class="carousel-width">
+                    <div class="carousel">
+                        <div class="brand"><div class="logo-position"><img src="./images/amazon.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/apple.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/nvidia.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/google.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/microsoft.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/abb.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/coca-cola.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/costco.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/jnj.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/jpmorgan.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/lilly.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/gs.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/netflix.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/wellsfargo.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/pg.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/toyota.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/asml.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/tsmc.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/starbucks.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/mastercard.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/broadcom.png" alt="Company"></div></div>
+                        <div class="brand"><div class="logo-position"><img src="./images/adobe.png" alt="Company"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brands End -->
+
+    <!-- Steps Start -->
+    <section id="steps" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                <h1>3 Steps to Passive Income</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="step-card">
+                        <div class="step-circle">
+                            <span class="step-number">1</span>
+                        </div>
+                        <p>Set your income stream preferences</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="step-card">
+                        <div class="step-circle">
+                            <span class="step-number">2</span>
+                        </div>
+                        <p>Assess and tailor the collection of bonds</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="600">
+                    <div class="step-card">
+                        <div class="step-circle">
+                            <span class="step-number">3</span>
+                        </div>
+                        <p>Purchase the bonds at an online-broker</p>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="row justify-content-center" data-aos="fade-right" data-aos-delay="500">
+                <a href="#" class="btn btn-lg">Get Access - $150/yr</a>
+            </div>
+        </div>
+    </section>
+    <!-- Steps End -->
+
+    <!-- Real Estate Start -->
+    <section id="comparison" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+                <h1>Fixed-Income Bonds vs Income ETFs</h1>
+            </div>
+            <div class="row">
+                <div class="col-md-4 col-sm-12">
+                    <div class="comparison-card">
+                        <div class="comparison-circle">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+                        <p>Reliable Income</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="comparison-card">
+                        <div class="comparison-circle">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+                        <p>Preserves Invested Capital</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="comparison-card">
+                        <div class="comparison-circle">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+                        <p>Locks in Returns</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-md-4 col-sm-12">
+                    <div class="comparison-card justify-content-center">
+                        <div class="comparison-circle">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+                        <p>Shielded from Interest Rate Changes</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <div class="comparison-card">
+                        <div class="comparison-circle">
+                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
+                        </div>
+                        <p>Unaffected by Market Fluctuations</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-12 col-md-6">
+                    <div class="comparison-card" data-aos="fade-up" data-aos-delay="100">
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <h2>Bonds held to Maturity</h2>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-check"></i>
+                            <span class="ml-3"></span>
+                            <h3>Shielded from Interest Rate Changes</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-check"></i>
+                            <span class="ml-3"></span>
+                            <h3>Unaffected by Market Fluctuations</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-check"></i>
+                            <span class="ml-3"></span>
+                            <h3>Locks in returns</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-check"></i>
+                            <span class="ml-3"></span>
+                            <h3>Preserves Capital Investment</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-check"></i>
+                            <span class="ml-3"></span>
+                            <h3>Provides Reliable Income</h3>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <div class="comparison-card" data-aos="fade-up" data-aos-delay="300">
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <h2>Income ETFs</h2>
+                        </div>
+                        
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-xmark"></i>
+                            <span class="ml-3"></span>
+                            <h3>Sensitive to Interest Rate Changes</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-xmark"></i>
+                            <span class="ml-3"></span>
+                            <h3>Vulnerable to Market Volatility</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-xmark"></i>
+                            <span class="ml-3"></span>
+                            <h3>Returns are unknown</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-xmark"></i>
+                            <span class="ml-3"></span>
+                            <h3>Capital investment is subject to market risks</h3>
+                        </div>
+                        <div class="row align-items-center">
+                            <span class="ml-3"></span>
+                            <i class="fa-solid fa-xmark"></i>
+                            <span class="ml-3"></span>
+                            <h3>Unpredictable income</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Real Estate End -->
+
+
+    <!-- Offer Start -->
+    <section id="offer" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+        <div class="container">
+            <h1>What's Included</h1>
+            <div class="row align-items-center">
+                <span class="ml-3"></span>
+                <i class="fa-solid fa-check"></i>
+                <span class="ml-3"></span>
+                <h3>Prebuilt passive income streams</h3>
+            </div>
+            <div class="row align-items-center">
+                <span class="ml-3"></span>
+                <i class="fa-solid fa-check"></i>
+                <span class="ml-3"></span>
+                <h3>Custom passive income stream builder</h3>
+            </div>
+            <div class="row align-items-center">
+                <span class="ml-3"></span>
+                <i class="fa-solid fa-check"></i>
+                <span class="ml-3"></span>
+                <h3>Income stream tracking & notifications</h3>
+            </div>
+            <h1>What's Not Included</h1>
+            <div class="row align-items-center">
+                <span class="ml-3"></span>
+                <i class="fa-solid fa-xmark"></i>
+                <span class="ml-3"></span>
+                <h3>This is not financial or investment advice</h3>
+            </div>
+            <div class="row align-items-center">
+                <span class="ml-3"></span>
+                <i class="fa-solid fa-xmark"></i>
+                <span class="ml-3"></span>
+                <h3>We do not gaurentee investment outcomes</h3>
+            </div>
+            <div class="row align-items-center">
+                <span class="ml-3"></span>
+                <i class="fa-solid fa-xmark"></i>
+                <span class="ml-3"></span>
+                <h3>Bonds are bought at online-brokers, not here</h3>
+            </div>
+        </div>
+    </section>
+    <!-- Offer End -->
+
+    <!-- Sign Up Start -->
+    <section id="signup" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container d-flex flex-column align-items-center justify-content-center">
+            <h1 data-aos="fade-right" data-aos-delay="300">Is your cash still just sitting around?</h1>
+            <br><br>
+            <div data-aos="fade-right" data-aos-delay="500">
+                <a href="#" class="btn btn-lg">Get Access - $150/yr</a>
+            </div>
+        </div>
+    </section>
+  <!-- Sign Up End -->
+
+     <!-- Footer Start -->
+    <section id="footer">
+        <footer class="footer footer-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 col-sm-12">
+                        <p>&copy; 2024 Debt Markets Solutions LLC. All rights Reserved.</p>
+                        <p>Contact Support: support@fixedincome.app</p>
+                        <p><a style="color: #9dd67d;" href="privacy-policy.html">Privacy Policy</a></p>
+                        <p><a style="color: #9dd67d;" href="terms-of-service.html">Terms of Service</a></p>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <p>Debt Markets Solutions LLC and FixedIncome.app provide financial data and do not offer any financial
+                        services. The data presented on this platform is not real-time and is not guaranteed to be accurate.
+                        Therefore, Debt Markets Solutions LLC and FixedIncome.app do not assume any responsibility for trading
+                        losses that may occur from using this data. Debt Markets Solutions LLC, or any associated data providers,
+                        individuals, or businesses, will not accept any liability for any loss or damage resulting from reliance
+                        on the information provided on this website and platform, including data and derived metrics. It is
+                        important to fully understand the risks and costs associated with trading financial markets. Debt Markets
+                        Solutions LLC does not provide any warranties, including fitness for a particular purpose or use.</p>
+                        <br><br>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- Footer End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>
