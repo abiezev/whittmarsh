@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passive Income in 1 hour</title>
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="universal.css">
+
+    <style>
+
+        @media (max-width: 991px) {
+            #nav .links {
+                display: none;
+            }
+
+            #nav .small-screen {
+                display: block;
+                margin-right: 20px;
+            }
+        }
+
+        @media (min-width: 992px) {
+            #nav .links {
+                display: block;
+                font-weight: 600;
+            }
+
+            #nav .small-screen {
+                display: none;
+            }
+
+            #nav a {
+                color: #3f4b36;
+                margin-right: 20px;
+            }
+        }
+
+        #nav .nav {
+            margin-top: 20px;
+            justify-content: space-between;
+        }
+
+        #nav img {
+            margin-left: 20px;
+            height: 34px;
+            width: auto;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Nav Start -->
+    <section id="nav">
+        <div class="nav align-items-center">
+            <img src="favicon.png" alt="Icon">
+            <div class="links">
+                <a href="#" onclick="scrollToSection('tailor')">Customize Your Income</a>
+                <a href="#" onclick="scrollToSection('value-prop')">Fixed Income Advantages</a>
+                <a href="#" onclick="scrollToSection('product')">Purchase</a>
+                <a href="#" onclick="scrollToSection('contrast')">Why Bonds?</a>
+                <a href="#" onclick="scrollToSection('risks')">How We Manage Risk</a>
+                <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+            </div>
+            <div class="small-screen">
+                <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+            </div>
+        </div>
+    </section>
+    <!-- Nav End -->
+    <div style="height: 500px;"></div>
+    <div id="value-prop" style="height: 500px;">value-prop</div>
+    <div id="tailor" style="height: 500px;">tailor</div>
+    <div id="product" style="height: 500px;">product</div>
+    <div id="contrast" style="height: 500px;">contrast</div>
+    <div id="risks" style="height: 500px;">contrast</div>
+    <div style="height: 500px;"></div>
+</body>
+</html>

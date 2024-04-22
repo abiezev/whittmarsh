@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "clean-css": "^5.3.3",
+    "jsdom": "^24.0.0"
+  }
+}

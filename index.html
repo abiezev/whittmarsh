@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passive Income in 1 hour</title>
     <link rel="icon" type="image/png" href="favicon.png">
     <meta name="description" content="Make Passive Income with Fixed-Income">
-    <meta name="keywords"
-        content="passive income, fixed income, money, cash, income, investing, income investing, cash flows, cash flow, bond investing, fixed income investing, fixed-income, bond markets, bonds, debt markets, debt">
+    <meta name="keywords" content="passive income, fixed income, money, cash, income, investing, income investing, cash flows, cash flow, bond investing, fixed income investing, fixed-income, bond markets, bonds, debt markets, debt">
 
     <!-- Google Analytics-->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -25,1024 +21,34 @@
 
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&amp;display=swap">
 
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
     
-    <style>
-        /* Universal Screen Size [start] */
-        body {
-            font-family: 'Nunito', sans-serif;
-            background-color: #e5eedb;
-            color: #3f4b36;
-            margin: 0px;
-            padding: 0px;
-        }
-
-        .footer-section {
-            background-color: #222222;
-            color: white;
-            padding-top: 50px;
-            padding-bottom: calc(50px + env(safe-area-inset-bottom));
-            padding-bottom: calc(50px + var(--safe-area-inset-bottom));
-            padding-bottom: calc(50px + -webkit-env(safe-area-inset-bottom));
-        }
-
-        .nav {
-            margin-top: 20px;
-            margin-right: 20px;
-            display: flex;
-            justify-content: flex-end;
-        }
-
-        .btn,
-        .btn:hover,
-        .btn:active,
-        .btn:focus {
-            background-color: #9dd67d;
-            color: #3f4b36;
-            border: none;
-        }
-        /* Universal Screen Size [end] */
-
-        @media (min-width: 769px) and (max-width: 991px) {
-            #hero .container {
-                margin-top: 100px;
-            }
-
-            #hero h1 {
-                margin-top: 20px;
-                font-size: 60px;
-                font-weight: 600;
-                margin-bottom: 25px;
-            }
-
-            #hero br {
-                display: block;
-            }
-
-            #hero p {
-                font-size: 28px;
-                margin-bottom: 20px;
-            }
-
-            #hero .row a {
-                margin-top: 50px;
-                margin-bottom: 80px;
-            }
-
-            #hero i {
-                color:#9dd67d;
-                font-size: 18px;
-                margin-right: 10px;
-            }
-
-            #hero span {
-                font-size: 14px;
-                margin-bottom: 100px;
-            }
-
-            #hero .spacer {
-                margin-right: 0px;
-                display: none;
-            }
-
-            #steps {
-                padding: 50px 10px;
-                background-color: #c4d0b8;
-            }
-
-            #steps h1 {
-                font-size: 26px;
-            }
-            
-            #steps h2 {
-                font-size: 26px;
-            }
-
-            .step-circle {
-                width: 40px;
-                height: 40px;
-                background-color: #3f4b36;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 10px;
-            }
-
-            .step-number {
-                color: #c4d0b8;
-                font-size: 20px;
-                padding: 10px;
-            }
-
-            .step-card {
-                margin: 16px auto;
-                border-radius: 10px;
-                transition: background-color 0.3s ease;
-                display: grid;
-                padding: 20px 20px;
-                font-size: 20px;
-            }
-
-            #etf {
-                padding: 100px 0px;
-            }
-
-            #etf .etf-card {
-                margin: 20px auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                font-size: 20px;
-                text-align: center;
-            }
-
-            #etf .etf-circle {
-                width: 120px;
-                height: 120px;
-                background-color: #c4d0b8;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            #etf i {
-                color: #3f4b36;
-                font-size: 60px;
-                padding: 20px;
-            }
-
-            #etf h1 {
-                margin-bottom: 20px;
-            }
-
-            #etf p {
-                margin-bottom: 0px;
-            }
-
-            #etf .remark i, #target .remark i {
-                font-size: 16px;
-                margin: 0px 10px 0px 0px;
-                padding: 0px;
-            }
-
-            #etf .remark .fa-check {
-                color:#9dd67d;
-            }
-
-            #etf .remark .fa-xmark {
-                color:#d67d7d;
-            }
-
-            #etf .remark span, #target .remark span {
-                font-size: 14px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #target {
-                padding: 100px 0px;
-            }
-
-            #target h2 {
-                font-size: 50px;
-            }
-
-            #target h4 {
-                font-size: 32px;
-                margin: 0px;
-            }
-
-            #target .remark {
-                margin: 20px 20px;
-                padding: 0px;
-            }
-
-            #target b {
-                font-size: 60px;
-                color: #9dd67d;
-            }
-
-            #target .line {
-                border-left: 2px solid #9dd67d;
-                position: relative;
-                list-style: none;
-            }
-
-            #target .line .item {
-                position: relative;
-            }
-
-            #target .line .item:after {
-                position: absolute;
-                display: block;
-            }
-
-            #target .line .circle {
-                position: absolute;
-                left: -61px;
-                background-color: #9dd67d;
-                color: white;
-                border-radius: 50%;
-                height: 40px;
-                width: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            #risks {
-                margin: 100px 0px;
-            }
-
-            #risks i {
-                font-size: 50px;
-                margin: 0px 30px;
-                color: #9dd67d;
-            }
-
-            #risks h1 {
-                margin: 0px;
-            }
-
-            #risks p {
-                font-size: 18px;
-            }
-
-            #risks h2 {
-                margin-bottom: 25px;
-            }
-
-            #risks strong {
-                color: #9dd67d;
-            }
-
-            #risks .bar {
-                padding-right: 0px;
-                padding-left: 0px;
-            }
-
-            #risks .bar-end {
-                padding-left: 0px;
-            }
-
-            #risk-conclusion {
-                background-color: #3f4b36;
-                padding: 80px;
-                color: #9dd67d;
-                text-align: center;
-            }
-
-            #risk-conclusion h1 {
-                font-size: 40px;
-            }
-
-            #pricing {
-                background-color: #3f4b36;
-                padding: 60px;
-                color: #9dd67d;
-                text-align: center;
-            }
-
-            #pricing h1 {
-                font-size: 36px;
-                margin-top: 0px;
-                padding-top: 0px;
-                margin-bottom: 40px;
-            }
-
-            #pricing a {
-                margin-bottom: 40px;
-            }
-
-            #pricing p {
-                font-size: 26px;
-            }
-
-            #tech {
-                padding: 100px;
-            }
-
-            #tech .tech-card {  
-                max-height: 300px;              
-                background-color: #c4d0b8;
-                padding: 10px 25px;
-                border-radius: 10px;
-                margin-bottom: 20px;
-            }
-
-            #tech i {
-                font-size: 40px;
-                margin: 20px 0px;
-                display: flex;
-                justify-content: center;
-            }
-
-            #tech h2 {
-                margin: 20px 0px;
-                text-align: center;
-                font-size: 28px;
-            }
-
-            #disclaimer .disclaimer-card {
-                padding: 10px;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-            }
-
-            #disclaimer i {
-                color: #d67d7d;
-                font-size: 40px;
-                margin: 0px 20px;
-                display: flex;
-                justify-content: center;
-
-            }
-
-            #disclaimer p {
-                margin: 20px 0px;
-                text-align: center;
-                font-size: 22px;
-            }
-
-            #signup {
-                display: flex;
-                height: 300px;
-                margin-top: 50px;
-                background-color: #3f4b36;
-                color: #9dd67d;
-                padding: 0px 30px;
-            }
-
-            #signup h1 {
-                font-size: 32px;
-            }
-
-        }
-        @media (min-width: 992px) {
-            #hero .container {
-                margin-top: 100px;
-            }
-
-            #hero h1 {
-                font-size: 80px;
-                font-weight: 600;
-                margin-bottom: 25px;
-            }
-
-            #hero br {
-                display: block;
-            }
-
-            #hero p, #steps h1 {
-                font-size: 32px;
-                margin-bottom: 5px;
-            }
-
-            #hero .row a {
-                margin-top: 60px;
-                margin-bottom: 100px;
-            }
-
-            #hero i {
-                color:#9dd67d;
-                font-size: 18px;
-                margin-right: 10px;
-            }
-
-            #hero span {
-                font-size: 14px;
-                margin-bottom: 100px;
-            }
-
-            #hero .spacer {
-                margin-right: 0px;
-                display: none;
-            }
-
-            #steps {
-                padding: 80px;
-                background-color: #c4d0b8;
-            }
-            
-            #steps h2 {
-                font-size: 26px;
-            }
-
-            .step-circle {
-                width: 60px;
-                height: 60px;
-                background-color: #3f4b36;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            .step-number {
-                color: #c4d0b8;
-                font-size: 32px;
-                padding: 20px;
-            }
-
-            .step-card {
-                margin: 20px auto;
-                border-radius: 10px;
-                transition: background-color 0.3s ease;
-                display: grid;
-                padding: 20px 20px;
-                font-size: 20px;
-            }
-            
-            #etf {
-                padding: 100px 0px;
-            }
-
-            #etf .etf-card {
-                margin: 20px auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                font-size: 20px;
-                text-align: center;
-            }
-
-            #etf .etf-circle {
-                width: 120px;
-                height: 120px;
-                background-color: #c4d0b8;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            #etf i {
-                color: #3f4b36;
-                font-size: 60px;
-                padding: 20px;
-            }
-
-            #etf h1 {
-                margin-bottom: 20px;
-            }
-
-            #etf p {
-                margin-bottom: 0px;
-            }
-
-            #etf .remark i, #target .remark i {
-                font-size: 16px;
-                margin: 0px 10px 0px 0px;
-                padding: 0px;
-            }
-
-            #etf .remark .fa-check {
-                color:#9dd67d;
-            }
-
-            #etf .remark .fa-xmark {
-                color:#d67d7d;
-            }
-
-            #etf .remark span, #target .remark span {
-                font-size: 14px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #target {
-                padding: 100px 0px;
-            }
-
-            #target h2 {
-                font-size: 50px;
-            }
-
-            #target h4 {
-                font-size: 32px;
-                margin: 0px;
-            }
-
-            #target .remark {
-                margin: 20px 20px;
-                padding: 0px;
-            }
-
-            #target b {
-                font-size: 60px;
-                color: #9dd67d;
-            }
-
-            #target .line {
-                border-left: 2px solid #9dd67d;
-                position: relative;
-                list-style: none;
-            }
-
-            #target .line .item {
-                position: relative;
-            }
-
-            #target .line .item:after {
-                position: absolute;
-                display: block;
-            }
-
-            #target .line .circle {
-                position: absolute;
-                left: -61px;
-                background-color: #9dd67d;
-                color: white;
-                border-radius: 50%;
-                height: 40px;
-                width: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            #risks {
-                margin: 100px 0px;
-            }
-
-            #risks i {
-                font-size: 50px;
-                margin: 0px 30px;
-                color: #9dd67d;
-            }
-
-            #risks h1 {
-                margin: 0px;
-            }
-
-            #risks p {
-                font-size: 18px;
-            }
-
-            #risks h2 {
-                margin-bottom: 25px;
-            }
-
-            #risks strong {
-                color: #9dd67d;
-            }
-
-            #risks .bar {
-                border-right: 1px solid #9dd67d;
-                padding-right: 30px;
-                padding-left: 30px;
-            }
-
-            #risks .bar-end {
-                padding-left: 30px;
-            }
-
-            #risk-conclusion {
-                background-color: #3f4b36;
-                padding: 80px;
-                color: #9dd67d;
-                text-align: center;
-            }
-
-            #risk-conclusion h1 {
-                max-width: 895px;
-                font-size: 40px;
-            }
-
-            #pricing {
-                background-color: #3f4b36;
-                padding: 80px;
-                color: #9dd67d;
-            }
-
-            #pricing h1 {
-                font-size: 42px;
-                margin-top: 0px;
-                padding-top: 0px;
-                margin-bottom: 40px;
-            }
-
-            #pricing a {
-                margin-bottom: 60px;
-            }
-
-            #pricing p {
-                font-size: 32px;
-            }
-
-            #tech {
-                padding: 100px;
-            }
-
-            #tech .tech-card {  
-                display: flex;
-                flex-direction: column;
-                height: 100%;
-                background-color: #c4d0b8;
-                padding: 25px;
-                border-radius: 10px;
-            }
-
-            #tech i {
-                font-size: 50px;
-                margin: 20px 0px;
-                display: flex;
-                justify-content: center;
-            }
-
-            #tech h2 {
-                margin: 20px 0px;
-                text-align: center;
-                font-size: 28px;
-            }
-
-            #disclaimer {
-                padding: 100px;
-                padding-top: 0px;
-            }
-
-            #disclaimer .disclaimer-card {
-                padding: 25px;
-                border-radius: 10px;
-            }
-
-            #disclaimer i {
-                color: #d67d7d;
-                font-size: 50px;
-                margin: 20px 0px;
-                display: flex;
-                justify-content: center;
-            }
-
-            #disclaimer p {
-                margin: 20px 0px;
-                text-align: center;
-                font-size: 24px;
-            }
-
-            #signup {
-                display: flex;
-                height: 400px;
-                margin-top: 50px;
-                background-color: #3f4b36;
-                color: #9dd67d;
-            }
-        }
-
-        @media (max-width: 768px) {
-            #hero h1 {
-                margin-top: 100px;
-                font-size: 48px;
-                font-weight: 600;
-                margin-bottom: 25px;
-            }
-
-            #hero br {
-                display: none;
-            }
-
-            #hero p {
-                font-size: 20px;
-                margin-bottom: 20px;
-            }
-
-            #hero .row a {
-                margin-bottom: 60px;
-                margin-top: 40px;
-            }
-
-            #hero i {
-                color:#9dd67d;
-                font-size: 18px;
-                margin-right: 10px;
-            }
-
-            #hero span {
-                font-size: 14px;
-                margin-bottom: 100px;
-            }
-
-            #hero .spacer {
-                margin-right: 0px;
-                display: none;
-            }
-
-            #steps {
-                padding: 50px 10px;
-                background-color: #c4d0b8;
-            }
-
-            #steps h1 {
-                font-size: 26px;
-            }
-            
-            #steps h2 {
-                font-size: 26px;
-            }
-
-            .step-circle {
-                margin-right: 15px;
-                width: 32px;
-                height: 32px;
-                background-color: #3f4b36;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 10px;
-            }
-
-            .step-number {
-                color: #c4d0b8;
-                font-size: 20px;
-                padding: 10px;
-            }
-
-            .step-card {
-                border-radius: 10px;
-                transition: background-color 0.3s ease;
-                display: flex;
-                align-items: center;
-                padding: 20px 20px;
-                font-size: 20px;
-            }
-
-            #etf {
-                padding: 50px 0px;
-            }
-
-            #etf .etf-card {
-                margin: 20px auto;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                padding: 20px;
-                font-size: 20px;
-                text-align: center;
-            }
-
-            #etf .etf-circle {
-                width: 90px;
-                height: 90px;
-                background-color: #c4d0b8;
-                border-radius: 50%;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                margin-bottom: 20px;
-            }
-
-            #etf i {
-                color: #3f4b36;
-                font-size: 40px;
-                padding: 20px;
-            }
-
-            #etf h1 {
-                font-size: 32px;
-                margin: 30px;
-                text-align: center;
-            }
-
-            #etf p {
-                margin-bottom: 0px;
-            }
-
-            #etf .remark i, #target .remark i {
-                font-size: 16px;
-                margin: 0px 10px 0px 0px;
-                padding: 0px;
-            }
-
-            #etf .remark .fa-check {
-                color:#9dd67d;
-            }
-
-            #etf .remark .fa-xmark {
-                color:#d67d7d;
-            }
-
-            #etf .remark span, #target .remark span {
-                font-size: 14px;
-                margin: 0px;
-                padding: 0px;
-            }
-
-            #target {
-                padding: 50px 0px;
-                margin: 0px 30px;
-            }
-
-            #target h2 {
-                font-size: 30px;
-                margin-bottom: 80px;
-                margin-top: 50px;
-            }
-
-            #target h4 {
-                font-size: 28px;
-                margin: 0px;
-            }
-
-            #target .remark {
-                margin: 20px 20px;
-                padding: 0px;
-            }
-
-            #target b {
-                font-size: 36px;
-                color: #9dd67d;
-            }
-
-            #target .line {
-                border-left: 2px solid #9dd67d;
-                position: relative;
-                list-style: none;
-            }
-
-            #target .line .item {
-                position: relative;
-            }
-
-            #target .line .item:after {
-                position: absolute;
-                display: block;
-            }
-
-            #target .line .circle {
-                position: absolute;
-                left: -61px;
-                background-color: #9dd67d;
-                color: white;
-                border-radius: 50%;
-                height: 40px;
-                width: 40px;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-
-            #risks {
-                margin: 50px 30px;
-            }
-
-            #risks i {
-                display: none;
-                font-size: 40px;
-                margin: 0px 0px;
-                color: #9dd67d;
-            }
-
-            #risks h1 {
-                font-size: 32px;
-                margin: 0px;
-            }
-
-            #risks p {
-                font-size: 18px;
-            }
-
-            #risks h2 {
-                margin: 25px 0px;
-                font-size: 28px;
-            }
-
-            #risks strong {
-                color: #9dd67d;
-            }
-
-            #risks .bar {
-                padding-right: 0px;
-                padding-left: 0px;
-            }
-
-            #risks .bar-end {
-                padding-left: 0px;
-            }
-
-            #risk-conclusion {
-                background-color: #3f4b36;
-                padding: 50px 10px;
-                color: #9dd67d;
-                text-align: center;
-            }
-
-            #risk-conclusion h1 {
-                font-size: 28px;
-            }
-
-            #pricing {
-                background-color: #3f4b36;
-                padding: 60px;
-                color: #9dd67d;
-                text-align: center;
-            }
-
-            #pricing h1 {
-                font-size: 32px;
-                margin-top: 0px;
-                padding-top: 0px;
-                margin-bottom: 40px;
-            }
-
-            #pricing a {
-                margin-bottom: 40px;
-            }
-
-            #pricing p {
-                font-size: 26px;
-            }
-
-            #tech {
-                padding: 50px 20px;
-            }
-
-            #tech .tech-card {  
-                max-height: 300px;              
-                background-color: #c4d0b8;
-                padding: 10px 20px;
-                border-radius: 10px;
-                margin-bottom: 20px;
-            }
-
-            #tech i {
-                font-size: 30px;
-                margin: 10px 0px;
-                display: flex;
-                justify-content: center;
-            }
-
-            #tech h1 {
-                font-size: 32px;
-            }
-
-            #tech h2 {
-                margin: 20px 0px;
-                text-align: center;
-                font-size: 25px;
-            }
-
-            #disclaimer .disclaimer-card {
-                padding: 10px;
-                border-radius: 10px;
-                display: flex;
-                align-items: center;
-            }
-
-            #disclaimer h1 {
-                font-size: 32px;
-            }
-
-            #disclaimer i {
-                color: #d67d7d;
-                font-size: 40px;
-                margin: 0px 20px;
-
-            }
-
-            #disclaimer p {
-                margin: 20px 0px;
-                text-align: start;
-                font-size: 20px;
-            }
-
-            #signup {
-                display: flex;
-                height: 300px;
-                margin-top: 50px;
-                background-color: #3f4b36;
-                color: #9dd67d;
-                padding: 0px 30px;
-            }
-
-            #signup h1 {
-                font-size: 32px;
-            }
-        }
-    </style>
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles.min.css">
 </head>
 
 <body>
-    <!-- Hero Start -->
-    <section id="hero">
-        <div class="nav">
-            <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+    <section id="nav">
+        <div class="nav align-items-center">
+            <img src="favicon.png" alt="Icon">
+            <div class="links">
+                <a href="#" onclick="scrollToSection('tailor')">Customize Your Income</a>
+                <a href="#" onclick="scrollToSection('value-prop')">Fixed Income Advantages</a>
+                <a href="#" onclick="scrollToSection('product')">Purchase</a>
+                <a href="#" onclick="scrollToSection('contrast')">Why Bonds?</a>
+                <a href="#" onclick="scrollToSection('risks')">How We Manage Risk</a>
+                <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+            </div>
+            <div class="small-screen">
+                <a href="https://app.fixedincome.app" class="btn btn-md">Sign In</a>
+            </div>
         </div>
+    </section>
+    <section id="hero">
         <div class="container text-center">
             <h1>Build a Passive Income <br>Stream in 1 hour</h1>
             <p>Make Passive Income with Fixed-Income</p>
@@ -1052,7 +58,7 @@
                 </div>
                 <div class="spacer"></div>
                 <div class="col-sm-12 col-md-auto">
-                    <i class="fas fa-check"></i><span>Prebuilt Income Plans</span>    
+                    <i class="fas fa-check"></i><span>Ready-To-Go Income Plans</span>    
                 </div>
                 <div class="spacer"></div>
                 <div class="col-sm-12 col-md-auto">
@@ -1064,9 +70,6 @@
             </div>
         </div>
     </section>
-    <!-- Hero End -->
-
-    <!-- Steps Start -->
     <section id="steps" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
         <div class="container">
             <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
@@ -1100,53 +103,89 @@
             </div>
         </div>
     </section>
-    <!-- Steps End -->
-
-    <!-- Target Start -->
-    <section id="target" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+    <section id="tailor" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 col-lg-4 col-sm-12">
-                    <h2><b>Target investment outcomes</b> with prebuilt or custom income plans<h2>
-                </div>
-                <div class="col-md-6 offset-lg-2 col-lg-6 col-sm-12">
-                    <ul class="line">
+                <div class="col-md-12 col-lg-5 col-sm-12">
+                    <h1><b>Tailor your income</b> with ready-to-go plans or customize your own plan</h1><h1>
+                </h1></div>
+                <div class="col-md-12 offset-lg-1 col-lg-6 col-sm-12">
+                    <ul class="steps">
                         <li class="item">
                             <span class="circle">1</span>
-                            <h3>Target Credit Quality or Yield</h3>
-                            <div class="remark">
-                                <h5>Investment Grade</h5>
-                                <span>Get paid by the highest quality companies</span>
-                            </div>
-                            <div class="remark">
+                            <h3>Select Yield and Risk</h3>
+                            <div class="feature">
                                 <h5>High Yield</h5>
-                                <span>Target returns up to 8%</span>
+                                <p>Target returns up to 8%</p>
+                            </div>
+                            <div class="feature">
+                                <h5>Low Risk (Investment Grade)</h5>
+                                <p>Get paid by the highest quality companies</p>
                             </div>
                         </li>
                 
                         <li class="item">
                             <span class="circle">2</span>
-                            <h3>Target Income or Cash Flow</h3>
-                            <div class="remark">
+                            <h3>Choose Income Stream or Cash Flow</h3>
+                            <div class="feature">
                                 <h5>Income Stream</h5>
-                                <span>Recieve monthly income payments and principal is returned at the end of the investment period</span>
+                                <p>Recieve monthly income payments</p>
+                                <p>Principal is returned at the end of the investment period, locking-in yield</p>
                             </div>
-                            <div class="remark">
+                            <div class="row income-graphic">
+                                <div class="coupon"></div>
+                                <div class="coupon"></div>
+                                <div class="coupon"></div>
+                                <div class="coupon"></div>
+                                <div class="coupon"></div>
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
+                            </div>
+                            <div class="feature">
                                 <h5>Cash Flow</h5>
-                                <span>Ensures you have access to invested cash on a scheduled frequency throughout the investment period</span>
+                                <p>Recieve monthly income payments</p>
+                                <p>Principal matures throughout the investment period, providing monthly liquidity. To maintain continuous cash flow and yield, principal is reinvested unless needed</p>
+                            </div>
+                            <div class="row income-graphic">
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
+                                <div class="income-bar">
+                                    <div class="coupon"></div>
+                                    <div class="principal"></div>
+                                </div>
                             </div>
                         </li>
                     
                         <li class="item">
                             <span class="circle">3</span>
-                            <h3>Target Time Horizon or Liquidity</h3>
-                            <div class="remark">
+                            <h3>Set Time Horizon or Liquidity</h3>
+                            <div class="feature">
                                 <h5>Time Horizon</h5>
-                                <span>Set your income stream investment period</span>
+                                <p>Set your income stream investment period</p>
                             </div>
-                            <div class="remark">
+                            <div class="feature">
                                 <h5>Liquidity</h5>
-                                <span>Set your cash flow liquidity frequency</span>
+                                <p>Set your cash flow income and liquidity frequency</p>
                             </div>
                         </li>
                     </ul>
@@ -1154,242 +193,321 @@
             </div>
         </div>
     </section>
-    <!-- Target End -->
-
-    <!-- Risks Start -->
-    <section id="risks" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+    <section id="value-prop" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
         <div class="container">
+            <div class="row justify-content-center">
+                <h1>Fixed Income Advantages</h1>
+            </div>            
+            <div class="row">
+                <div class="col-lg-2 col-md-4 offset-lg-1 col-sm-12" data-aos="fade-up" data-aos-delay="100">
+                    <div class="item-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-sliders"></i>
+                        </div>
+                        <p>Income Tailored to Your Needs</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 col-lg-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="item-card">
+                        <div class="icon-circle">
+                            <div class="icon-stack">
+                                <i class="fa-solid fa-wrench"></i>
+                                <i class="fa-solid fa-slash" style="color: #9dd67d; font-size: 90px;"></i>
+                                <i class="fa-solid fa-slash"></i>
+                            </div>
+                        </div>
+                        <p>100% Hands-off Passive Income</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="300">
+                    <div class="item-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-lock"></i>
+                        </div>
+                        <p>Locks-in Returns When You Invest</p>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-4 offset-md-2 offset-lg-0 col-lg-2 " data-aos="fade-up" data-aos-delay="400">
+                    <div class="item-card">
+                        <div class="icon-circle">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <p>Shields from Market Chaos</p>
+                    </div>
+                </div>
+                <div class="col-lg-2 col-md-4 col-sm-12" data-aos="fade-up" data-aos-delay="500">
+                    <div class="item-card">
+                        <div class="icon-circle">
+                            <i class="fa-regular fa-calendar-check"></i>
+                        </div>
+                        <p>Monthly Income on Autopilot</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="product" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row">
+                <div class="sm-screen col-md-5 col-lg-5 offset-lg-1 col-sm-12">
+                    <div class="justify-content-center">
+                        <br>
+                        <br>
+                        <h3>Get Passive Income</h3>
+                        <h3>with Fixed Income</h3>
+                        <br>
+                        <div data-aos="fade-right" data-aos-delay="100">
+                            <a href="https://buy.stripe.com/aEU3fR7t4eUy0fK001" class="btn btn-lg">Get Access - $150/year</a>
+                        </div>
+                        <br>
+                        <br>
+                        <p>Simple flat-fee price</p>
+                        <p class="d-flex align-items-center sm-screen">Payments are processed with&nbsp;<i class="fa-brands fa-stripe"></i></p>
+                    </div>
+                    <div class="row sm-screen">
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-amex"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                        <i class="fa-brands fa-cc-discover"></i>
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                </div>
+                <div class="col-md-7 col-lg-6 col-sm-12">
+                    <div class="row justify-content-center">
+                        <h4>What's inside</h4>
+                        <br>
+                        <br>
+                    </div>
+                    <div class="item-card">
+                        <div class="row card-title">
+                            <h4>Ready-To-Go Income Plans</h4>
+                            <i class="fas fa-list"></i>
+                        </div>
+                        <p>Pre-designed plans tailored to investment goals, whether it's maximizing returns, minimizing risk, creating cash flow, or managing liquidity. With these plans, you can easily begin generating income right away.</p>
+                    </div>
+                    <div class="item-card">
+                        <div class="row card-title">
+                            <h4>Custom Income Builder</h4>
+                            <i class="fas fa-sliders"></i>
+                        </div>
+                        <p>This workflow provides you with the list of available bonds that meet your target criteria, providing you flexibility to invest in what you want while still keeping you aligned to your target.</p>
+                    </div>
+                    <div class="item-card">
+                        <div class="row card-title">
+                            <h4>Creditworthiness Evaluations</h4>
+                            <i class="fas fa-magnifying-glass-chart"></i>
+                        </div>
+                        <p>We provide issuer financial data to help you evaluate creditworthiness. This information includes metrics such as debt ratios, profitability ratios, and interest coverage ratios.</p>
+                    </div>
+                    <div class="item-card">
+                        <div class="row card-title">
+                            <h4>Tracking &amp; Notifications</h4>
+                            <i class="fa-regular fa-bell"></i>
+                        </div>
+                        <p>After saving your plan, we assist you in monitoring the progress of your investments and guide you in reinvesting maturing bonds.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contrast" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+        <div class="container">
+            <div class="row justify-content-center">
+                <h1>Why Bonds?</h1>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="accordion" id="accordion">                      
+                        <div class="card">
+                            <a class="card-header" id="headingOne" data-toggle="collapse" aria-controls="collapseOne">
+                                Bonds vs Real Estate: 7 reasons to invest in bonds, and 2 reasons not to
+                            </a>
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: 50%;">
+                                            <col style="width: 50%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>Bonds</th>
+                                                <th>Real Estate</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>100% passive</span></td>
+                                                <td><i class="fas fa-xmark"></i><span>Partially passive</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>1 hour of upfront work</span></td>
+                                                <td><i class="fas fa-xmark"></i><span>Months of upfront work</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>Zero Maintenance</span></td>
+                                                <td><i class="fas fa-xmark"></i><span> Ongoing Maintenance</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>Liquid</span></td>
+                                                <td><i class="fas fa-xmark"></i><span>Not liquid</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>No leverage</span></td>
+                                                <td><i class="fas fa-xmark"></i><span>Requires a mortgage</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>Can avoid market volatility</span></td>
+                                                <td><i class="fas fa-xmark"></i><span>Subject to market volatility</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-check"></i><span>No additional obligations</span></td>
+                                                <td><i class="fas fa-xmark"></i><span>Have to pay mortgage monthly</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-xmark"></i><span>Typically Lower yield</span></td>
+                                                <td><i class="fas fa-check"></i><span>Typically Higher yield</span></td>
+                                            </tr>
+                                            <tr>
+                                                <td><i class="fas fa-xmark"></i><span>Low capital gains potential</span></td>
+                                                <td><i class="fas fa-check"></i><span>High capital gains potential</span></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                        <h4>Bonds are truly passive, while Real Estate is more of a business</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>  
+                        <div class="card">
+                            <a class="card-header" id="headingTwo" data-toggle="collapse" aria-controls="collapseTwo">
+                                Bonds vs Bond ETFs, REITs &amp; Dividend Stocks: 7 reasons to invest in bonds
+                            </a>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                                <div class="card-body">
+                                    <table>
+                                        <colgroup>
+                                            <col style="width: 20%;">
+                                            <col style="width: 40%;">
+                                            <col style="width: 40%;">
+                                        </colgroup>
+                                        <thead>
+                                            <tr>
+                                                <th>Reasons</th>
+                                                <th>Bonds</th>
+                                                <th>Bond ETFs, REITs &amp; Dividend Stocks</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th>Unaffected by Market Fluctuations</th>
+                                                <td>Bonds held to maturity are repaid by issuers</td>
+                                                <td>ETFs, REITs &amp; Stocks are exposed to market volatility</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Shielded from Rate Changes</th>
+                                                <td>Bonds held to maturity are unaffected by interest rate changes</td>
+                                                <td>Bond ETFs &amp; REITs are sensitive to interest rates</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Reliable Income</th>
+                                                <td>Fixed-income bonds have fixed rates</td>
+                                                <td>Dividends can change at anytime</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Preserves Invested Capital</th>
+                                                <td>Bonds are repaid at par value</td>
+                                                <td>Invested capital is subject to market timing, but can offer higher returns if there are capital gains</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Locks in Returns</th>
+                                                <td>Returns are known at time of investment</td>
+                                                <td>ETFs, REITs &amp; stock returns depend on dividend changes and market timing of exit</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Fees</th>
+                                                <td>Bonds held to maturity just have the purchase transaction fee</td>
+                                                <td>ETFs and REITs have ongoing AUM fees</td>
+                                            </tr>
+                                            <tr>
+                                                <th>Liquidity</th>
+                                                <td>You can sell at anytime, but will be subject to the market. Our cash flow method provides some liquidity on a monthly basis without market exposure</td>
+                                                <td>You can sell at anytime, but will be subject to the market</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <br>
+                                    <br>
+                                    <div class="row justify-content-center">
+                                        <h4>Bonds offer reliable passive income with known returns and no market exposure</h4>
+                                    </div>
+                                    <br>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="risks" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+        <div class="container primary-risks">
             <div class="row justify-content-center align-items-center">
                 <i class="fa-solid fa-triangle-exclamation"></i><h1>Managing Key Risks</h1><i class="fa-solid fa-triangle-exclamation"></i>
             </div>
-            <br>
-            <br>
-            <br>
             <div class="row justify-content-center">
                 <div class="col-lg-4 col-sm-12 bar">
                     <h2>Market Risk</h2>
                     <p>At maturity, bonds are repaid by the issuer. We construct maturity ladders to match your liquidity needs, ensuring repayment by issuers and removing the need to resell in the market to completely avoid market risk.</p>
-                    <p><strong>Risk is avoided</strong></p>
+                    <b>Risk is avoided</b>
                 </div>
                 <div class="col-lg-4 col-sm-12 bar">
                     <h2>Interest Rate Risk</h2>
                     <p>By investing in uncallable fixed-income bonds, the interest rates are fixed at the time of purchase and remain unchanged until maturity. This shields you from any fluctuations in interest rates.</p>
-                    <p><strong>Risk is avoided</strong></p>
+                    <b>Risk is avoided</b>
                 </div>
                 <div class="col-lg-4 col-sm-12 bar-end">
                     <h2>Default Risk</h2>
                     <p>To minimize default risk, we offer income plans based on issuer credit quality, along with issuer financial data including debt ratios, profitability ratios, and interest coverage metrics for your evaluation.</p>
-                    <p><strong>Risk is minimized</strong></p>
+                    <b>Risk is minimized</b>
                 </div>
             </div>
             <br>
             <br>
         </div>
-    </section>
-
-    <section id="risk-conclusion" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-        <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center">
-                <h1>Our method helps you avoid market chaos, secure reliable income, and safeguard your capital.</h1>
-                <br><br>
-                <div data-aos="fade-right" data-aos-delay="200">
-                    <a href="https://buy.stripe.com/aEU3fR7t4eUy0fK001" class="btn btn-lg">Get Access - $150/yr</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Risks End -->
-
-    <!-- ETF Start -->
-    <section id="etf" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-        <div class="container">
-            <div class="row justify-content-center">
-                <h1>Fixed-Income Bonds vs Income ETFs</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="etf-card">
-                        <div class="etf-circle">
-                            <i class="fa-solid fa-circle-dollar-to-slot"></i>
-                        </div>
-                        <p>Reliable Income</p>
-                        <div class="remark">
-                            <i class="fas fa-check"></i><span>Fixed-income bonds have fixed rates</span>
-                        </div>
-                        <div class="remark">
-                            <i class="fas fa-xmark"></i><span>ETF dividends are constantly changing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="etf-card">
-                        <div class="etf-circle">
-                            <i class="fa-solid fa-money-check-dollar"></i>
-                        </div>
-                        <p>Preserves Invested Capital</p>
-                        <div class="remark">
-                            <i class="fas fa-check"></i><span>Bonds are repaid at par value</span>
-                        </div>
-                        <div class="remark">
-                            <i class="fas fa-xmark"></i><span>ETF returns are subject to market timing</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="etf-card">
-                        <div class="etf-circle">
-                            <i class="fa-solid fa-lock"></i>
-                        </div>
-                        <p>Locks in Returns</p>
-                        <div class="remark">
-                            <i class="fas fa-check"></i><span>Bonds returns are known</span>
-                        </div>
-                        <div class="remark">
-                            <i class="fas fa-xmark"></i><span>ETF returns are unknown</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="etf-card">
-                        <div class="etf-circle">
-                            <i class="fa-solid fa-shield-halved"></i>
-                        </div>
-                        <p>Shields from Rate Changes</p>
-                        <div class="remark">
-                            <i class="fas fa-check"></i><span>Bonds held to maturity are unaffected</span>
-                        </div>
-                        <div class="remark">
-                            <i class="fas fa-xmark"></i><span>ETFs are sensitive to interest rates</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6 col-sm-12">
-                    <div class="etf-card">
-                        <div class="etf-circle">
-                            <i class="fa-solid fa-chart-line"></i>
-                        </div>
-                        <p>Unaffected by Market Fluctuations</p>
-                        <div class="remark">
-                            <i class="fas fa-check"></i><span>Bonds held to maturity are repaid by issuers</span>
-                        </div>
-                        <div class="remark">
-                            <i class="fas fa-xmark"></i><span>ETFs are exposed to the market volatility</span>
-                        </div>
+        <div class="risk-plug" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
+            <div class="container">
+                <div class="d-flex flex-column align-items-center justify-content-center">
+                    <h3>Our method helps you avoid market chaos, secure reliable income, and safeguard your capital.</h3>
+                    <br><br>
+                    <div data-aos="fade-right" data-aos-delay="200">
+                        <a href="https://buy.stripe.com/aEU3fR7t4eUy0fK001" class="btn btn-lg">Get Access - $150/yr</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- ETF End -->
-
-    <!-- Pricing Start -->
-    <section id="pricing" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <div class="row">
-            <div class="offset-lg-2 col-lg-4 col-sm-12">
-                <div style="height: 100%;" class="d-flex justify-content-center align-items-center flex-column text-center">
-                    <h1>Simple Flat-Fee Pricing</h1>
-                    <a href="https://buy.stripe.com/aEU3fR7t4eUy0fK001" class="btn btn-lg">Get Access - $150/yr</a>
-                </div>
-            </div>
-            <div class="col-lg-4 col-sm-12">
-                <p>No AUM fees</p>
-                <p>No load fees</p>
-                <p>No wrap fees</p>
-                <p>No consultation fees</p>
-                <p>No performance fees</p>
-                <p>No commissions</p>
-            </div>
-        </div>
-    </section>
-    <!-- Pricing End -->
-
-    <!-- Tech Start -->
-    <section id="tech" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <h1>What's Included</h1>
-            </div>
-            <br>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-delay="100">
-                    <div class="tech-card">
-                        <i class="fas fa-list"></i>
-                        <h2>Prebuilt Income Plans</h2>
-                        <p>These plans include preselected bonds that target outcomes, including credit quality, yield, liquidity, and time horizon. This makes it easy for you to get an income stream up and running quickly.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-delay="300">
-                    <div class="tech-card">
-                        <i class="fas fa-sliders"></i>
-                        <h2>Custom Income Builder</h2>
-                        <p>This tool provides you with the list of available bonds that meet your target criteria, providing you flexibility to invest in what you want while still keeping you aligned to your target.</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12" data-aos="fade-up" data-aos-delay="500">
-                    <div class="tech-card">
-                        <i class="fa-regular fa-bell"></i>
-                        <h2>Tracking & Notifications</h2>
-                        <p>After saving your plan, we assist you in monitoring its progress and guide you in reinvesting maturing bonds.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Tech End -->
-
-    <!-- Disclaimer Start -->
-    <section id="disclaimer" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <h1>What's Not Included</h1>
-            </div>
-            <div class="row justify-content-center">
-                <div class="col-lg-4 col-sm-12">
-                    <div class="disclaimer-card">
-                        <i class="fa-regular fa-circle-xmark"></i>
-                        <p>This is not financial advice nor investment advice</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="disclaimer-card">
-                        <i class="fa-regular fa-circle-xmark"></i>
-                        <p>We do not gaurentee investment outcomes</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-sm-12">
-                    <div class="disclaimer-card">
-                        <i class="fa-regular fa-circle-xmark"></i>
-                        <p>Bonds are bought at online-brokers, not here</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Tech End -->
-
-
-    <!-- Sign Up Start -->
-    <section id="signup" data-aos="fade-up" data-aos-delay="100" data-aos-duration="400">
-        <div class="container d-flex flex-column align-items-center justify-content-center">
-            <h1 data-aos="fade-right" data-aos-delay="200">Is your cash still just sitting around?</h1>
-            <br><br>
-            <div data-aos="fade-right" data-aos-delay="300">
-                <a href="https://buy.stripe.com/aEU3fR7t4eUy0fK001" class="btn btn-lg">Get Access - $150/yr</a>
-            </div>
-        </div>
-    </section>
-    <!-- Sign Up End -->
-
-    <!-- Footer Start -->
     <section id="footer">
         <footer class="footer footer-section">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 col-sm-12">
-                        <p>&copy; 2024 Debt Markets Solutions LLC. All rights Reserved.</p>
+                        <p>© 2024 Debt Markets Solutions LLC. All rights Reserved.</p>
                         <p>Contact Support: support@fixedincome.app</p>
-                        <p><a style="color: #9dd67d;" href="privacy-policy.html">Privacy Policy</a></p>
-                        <p><a style="color: #9dd67d;" href="terms-of-service.html">Terms of Service</a></p>
+                        <p><a href="privacy-policy.html">Privacy Policy</a></p>
+                        <p><a href="terms-of-service.html">Terms of Service</a></p>
+                        <p></p>
+                        <p></p>
+                        <p>This is not financial advice</p>
+                        <p>We do not gaurentee investment outcomes</p>
+                        <p>Bonds are bought at online-brokers, not here</p>
                     </div>
                     <div class="col-md-6 col-sm-12">
                         <p>Debt Markets Solutions LLC and FixedIncome.app provide financial data and do not offer any financial
@@ -1406,13 +524,44 @@
             </div>
         </footer>
     </section>
-    <!-- Footer End -->
-
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>AOS.init();</script>
     
     <!-- Google Analytics -->
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NC22PT3X" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-</body>
-</html>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var collapseElements = document.querySelectorAll('.collapse');
+            var buttons = document.querySelectorAll('.card-header');
+        
+            buttons.forEach(function(button) {
+                button.addEventListener('click', function() {
+                    var target = document.getElementById(this.getAttribute('aria-controls'));
+            
+                    collapseElements.forEach(function(collapse) {
+                        if (collapse !== target && collapse.classList.contains('show')) {
+                            collapse.classList.remove('show');
+                        }
+                    });
+            
+                    target.classList.add('show');
+                    button.setAttribute('aria-expanded', true);
+                });
+            });
+        });
+    </script>
+
+    <script>
+        function scrollToSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            var paddingOffset = section.offsetTop;
+            window.scrollBy({
+                top: paddingOffset,
+                behavior: 'smooth'
+            });
+        }
+    </script>
+
+</body></html>

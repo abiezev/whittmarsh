@@ -1,0 +1,16 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #e5eedb;
+    color: #3f4b36;
+    margin: 0px;
+    padding: 0px;
+}
+
+.btn,
+.btn:hover,
+.btn:active,
+.btn:focus {
+    background-color: #9dd67d;
+    color: #3f4b36;
+    border: none;
+}
