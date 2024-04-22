@@ -87,12 +87,12 @@ function run() {
     // outputDoc.querySelector('section#disclaimer').innerHTML = disclaimerSection.innerHTML;
     // const disclaimerCSS = disclaimerDoc.querySelector('style').textContent.trim();
 
-    // const finalCta = readFileSync('final-cta.html', 'utf-8');
-    // const finalCtaDom = new JSDOM(finalCta);
-    // const finalCtaDoc = finalCtaDom.window.document;
-    // const finalCtaSection = finalCtaDoc.querySelector('section#final-cta');
-    // outputDoc.querySelector('section#final-cta').innerHTML = finalCtaSection.innerHTML;
-    // const finalCtaCSS = finalCtaDoc.querySelector('style').textContent.trim();
+    const finalCta = readFileSync('final-cta.html', 'utf-8');
+    const finalCtaDom = new JSDOM(finalCta);
+    const finalCtaDoc = finalCtaDom.window.document;
+    const finalCtaSection = finalCtaDoc.querySelector('section#final-cta');
+    outputDoc.querySelector('section#final-cta').innerHTML = finalCtaSection.innerHTML;
+    const finalCtaCSS = finalCtaDoc.querySelector('style').textContent.trim();
 
 
     const footer = readFileSync('footer.html', 'utf-8');
@@ -114,7 +114,7 @@ function run() {
     + '\n' + contrastCSS
     + '\n' + risksCSS
     // + '\n' + disclaimerCSS
-    // + '\n' + finalCtaCSS
+    + '\n' + finalCtaCSS
     + '\n' + footerCSS;
 
     writeFileSync('index.html', outputDom.serialize());
