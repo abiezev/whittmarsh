@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
 
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
     <style>
         body {
             font-family: 'Nunito', sans-serif;
@@ -30,19 +33,19 @@
             height: 100%;
         }
 
-        .animation {
+        #purchased .animation {
             width: auto;
             height: 200px;
         }
 
-        .container {
+        #purchased .container {
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100%;
         }
 
-        .center {
+        #purchased .center {
             text-align: center;
             max-width: 610px;
             margin-top: 100px;
@@ -50,7 +53,7 @@
             margin-right: 40px;
         }
 
-        a {
+        #purchased a {
             cursor: pointer;
             display: inline-block;
             text-align: center;
@@ -68,6 +71,30 @@
             border-radius: 8px;
         }
 
+        #purchased .desktop {
+            margin-top: 30px;
+            border-radius: 18px;
+            border: 0.5px solid #3f4b36;
+            padding-top: 8px;
+            padding-bottom: 8px;
+            padding-right: 16px;
+            padding-left: 16px;
+            display: inline-flex;
+            align-items: center;
+            font-size: 14px;
+        }
+
+        #purchased .desktop i {
+            font-size: 16px;
+            margin-left: 0px;
+            margin-right: 10px;
+        }
+
+        #purchased .desktop p {
+            margin: 0px;
+            padding: 0px;
+        }
+
     </style>
 </head>
 <body>
@@ -78,7 +105,14 @@
                 <p>Thank you for your payment! An email containing your login credentials is on its way!</p>
                 <p>Please check your spam folder.</p>
                 <a href="https://app.fixedincome.app">Log In</a>
-                <p>Please be aware that this platform currently only supports desktop screens with a minimum width of 1140 pixels.</p>
+                <div id="mobile-screen" style="display: none;">
+                    <div class="desktop">
+                        <i class="fa-solid fa-desktop"></i>
+                        <p>Desktop Web App</p>
+                    </div>
+                    <p>Please be sure to use a desktop.</p>
+                    <p>Your current screen width is <span id="viewportWidth"></span> pixels,<br>and the minimum supported screen width is 1140 pixels.</p>
+                </div>
                 <p>If you need assistance, please contact support@fixedincome.app.</p>
             </div>
         </div>
@@ -95,6 +129,22 @@
             autoplay: true,
             path: 'complete_animation.json'
         });
+    </script>
+
+    <!-- Viewport Width-->
+    <script>
+        function getViewportWidth() {
+            var width = window.innerWidth || document.documentElement.clientWidth;
+            var mobile = document.getElementById('mobile-screen');
+            if (width < 1140) {
+                document.getElementById('viewportWidth').innerHTML = width;
+                mobile.style.display = 'block';
+            } else {
+                mobile.style.display = 'none';
+            }
+        }
+        getViewportWidth();
+        window.addEventListener('resize', getViewportWidth);
     </script>
       
     <!-- Google Analytics -->
