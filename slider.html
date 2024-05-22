@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Selectable List</title>
+<style>
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    cursor: pointer;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+  }
+
+  li:hover {
+    background-color: #f0f0f0;
+  }
+
+  li.selected {
+    background-color: #007bff;
+    color: #fff;
+  }
+</style>
+</head>
+<body>
+
+<ul id="myList">
+  <li onclick="selectItem(1)">Item 1</li>
+  <li onclick="selectItem(2)">Item 2</li>
+  <li onclick="selectItem(3)">Item 3</li>
+</ul>
+
+<script>
+function selectItem(itemNumber) {
+  var listItems = document.querySelectorAll('#myList li');
+  listItems.forEach(function(item, index) {
+    if (index === itemNumber - 1) {
+      item.classList.add('selected');
+    } else {
+      item.classList.remove('selected');
+    }
+  });
+}
+</script>
+
+</body>
+</html>
