@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="universal.css">
+
+    <style>
+        #what-we-do {
+            background-color: #f4f5fa;
+            color: #3c2d89;
+        }
+
+        #what-we-do .subtitle {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        #what-we-do p {
+            color: #39383b;
+            font-size: 20px;
+            font-weight: 300;
+        }
+
+        #what-we-do h2 {
+            margin-top: 20px;
+            margin-bottom: 10px;
+            font-size: 32px;
+            font-weight: 600;
+        }
+
+        @media (min-width: 769px) {
+            #what-we-do {
+                padding: 80px 0px;
+            }
+
+            #what-we-do h1 {
+                font-size: 50px;
+                font-weight: 600;
+                margin-bottom: 45px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #what-we-do {
+                padding: 50px 20px;
+            }
+
+            #what-we-do h1 {
+                font-size: 30px;
+                font-weight: 600;
+                margin-bottom: 10px;
+            }
+        }
+
+        #what-we-do .grid {
+            padding: 10px;
+        }
+
+        #what-we-do .card {
+            background-color: transparent;
+            border: none;
+            overflow: hidden;
+        }
+
+        #what-we-do .icon-card {
+            margin-top: 50px;
+            margin-bottom: 20px;
+            height: 82px;
+            width: 82px;
+            border: none;
+            border-radius: 20px;
+            background-color: white;
+            box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #what-we-do img {
+            width: 80%;
+            height: 80%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div style="height: 500px;"></div>
+    <!-- Who We Work With Start -->
+    <section id="what-we-do" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row">
+                <div class="col text-center">
+                    <h1>What we do</h1>
+                    <div class="subtitle">
+                        <p>Whether you're looking to strengthen your decision-making or want a hands-off compliance solution, we tailor our services to your needs.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="grid col-sm-12 col-md-12 col-lg-6">
+                    <div class="card">
+                        <div class="icon-card">
+                            <img src="img/books.gif"/>
+                        </div>
+                        <h2>Bookkeeping</h2>
+                        <p>Get the peace of mind to focus on running your business, thanks to our triple-checked financial statements.</p>
+                    </div>
+                </div>
+                <div class="grid col-sm-12 col-md-12 col-lg-6">
+                    <div class="card">
+                        <div class="icon-card">
+                            <img src="img/controller.gif"/>
+                        </div>
+                        <h2>Controller</h2>
+                        <p>We help business take control of their business, financials. We serve as their accountants and handle all the books.</p>
+                    </div>
+                </div>
+                <div class="grid col-sm-12 col-md-12 col-lg-6">
+                    <div class="card">
+                        <div class="icon-card">
+                            <img src="img/cfo.gif"/>
+                        </div>
+                        <h2>CFO</h2>
+                        <p>Need help with budgeting, KPIs, board decks, or fundraising? Our CFOs advise and prepare you.</p>
+                    </div>
+                </div>
+                <div class="grid col-sm-12 col-md-12 col-lg-6">
+                    <div class="card">
+                        <div class="icon-card">
+                            <img src="img/pay.gif"/>
+                        </div>
+                        <h2>Payroll</h2>
+                        <p>We take the confusion out of payroll, and help you onboard new clients, contractors and employees.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Who We Work With End --> 
+    <div style="height: 500px;"></div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

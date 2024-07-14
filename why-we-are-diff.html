@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap">
+
+    <!-- Font Awesome Icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="universal.css">
+
+    <style>
+        #why-we-are-diff {
+            background-color: white;
+            color: #39383b;
+        }
+
+        @media (min-width: 769px) {
+            #why-we-are-diff {
+                padding-top: 80px;
+                padding-bottom: 80px;
+            }
+
+            #why-we-are-diff h1 {
+                font-size: 48px;
+                font-weight: 600;
+                margin-bottom: 30px;
+            }
+
+            #why-we-are-diff h3 {
+                font-size: 26px;
+                padding-top: 5px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #why-we-are-diff {
+                padding: 50px 0px;
+            }
+
+            #why-we-are-diff h1 {
+                font-size: 34px;
+                font-weight: 600;
+                margin-bottom: 20px;
+            }
+
+            #why-we-are-diff h3 {
+                font-size: 24px;
+                padding-top: 5px;
+            }
+        }
+
+        #why-we-are-diff .steps {
+            border-left: 1px solid #c1adf5;
+            position: relative;
+            list-style: none;
+        }
+
+        #why-we-are-diff .steps .item {
+            position: relative;
+        }
+
+        #why-we-are-diff .steps .item:after {
+            position: absolute;
+            display: block;
+        }
+
+        #why-we-are-diff .steps .square {
+            position: absolute;
+            left: -40px;
+            background-color: #5f2fe5;
+            height: 40px;
+            width: 4px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        #why-we-are-diff h5 {
+            font-size: 20px;
+            font-weight: 300;
+            margin-bottom: 60px;
+        }
+
+        #why-we-are-diff b {
+            color: #5f2fe5;
+            font-weight: 600;
+        }
+
+        #why-we-are-diff p {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 18px;
+            font-weight: 300;
+        }
+
+        #why-we-are-diff .p2 {
+            margin-top: 30px;
+            margin-bottom: 30px;
+            font-size: 16px;
+            font-weight: 300;
+            color: #616062;
+        }
+    </style>
+</head>
+<body>
+    <div style="height: 500px;"></div>
+    <!-- Why We Are Different Start -->
+    <section id="why-we-are-diff" data-aos="fade-up" data-aos-delay="100" data-aos-duration="500">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-5 col-sm-12">
+                    <h1><b>Why we're different</b></h1>
+                    <h5>There's a reason that we're the largest startup accounting firm in the US.</h5>
+                </div>
+                <div class="col-md-12 offset-lg-1 col-lg-6 col-sm-12">
+                    <ul class="steps">
+                        <li class="item">
+                            <span class="square"></span>
+                            <h3><b>The most experienced</b></h3>
+                            <p>We're trusted by thousands of companies because we've helped countless startups achieve success.</p>
+                            <p class="p2">We understand the unique challenges that come with growing a business and have the expertise you need to reach your goals.</p>
+                        </li>
+                
+                        <li class="item">
+                            <span class="square"></span>
+                            <h3><b>The most scalable</b></h3>
+                            <p>We're the last accounting firm you'll ever need to hire.</p>
+                            <p class="p2">We support tiny startups and large companies, so no matter how your needs evolve, we've got you covered.</p>
+                        </li>
+                    
+                        <li class="item">
+                            <span class="square"></span>
+                            <h3><b>The most tech-forward</b></h3>
+                            <p>We have an unbeatable combo: a team of finance experts paired with a top-notch in-house engineering team.</p>
+                            <p class="p2">The result? Deep integrations with the tools you already use, and a seamless platform for staying on top of everything.</p>                           
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Why We Are Different End --> 
+    <div style="height: 500px;"></div>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>AOS.init();</script>
+</body>
+</html>

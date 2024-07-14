@@ -8,13 +8,11 @@ run();
 /* 
     Nav
     Hero
-    Steps
-    Value Prop
-    Tailor Income
-    Product
-    Risk
-    Why Bonds
-    Final CTA
+    whoWeAre
+    whoWeWorkWith
+    whatWeDo
+    whyWeDiff
+    callToAction
     Footer
 */
 
@@ -38,61 +36,48 @@ function run() {
     outputDoc.querySelector('section#hero').innerHTML = heroSection.innerHTML;
     const heroCSS = heroDoc.querySelector('style').textContent.trim();
 
-    const steps = readFileSync('steps.html', 'utf-8');
-    const stepsDom = new JSDOM(steps);
-    const stepsDoc = stepsDom.window.document;
-    const stepsSection = stepsDoc.querySelector('section#steps');
-    outputDoc.querySelector('section#steps').innerHTML = stepsSection.innerHTML;
-    const stepsCSS = stepsDoc.querySelector('style').textContent.trim();
+    const whoWeServe = readFileSync('who-we-serve.html', 'utf-8');
+    const whoWeServeDom = new JSDOM(whoWeServe);
+    const whoWeServeDoc = whoWeServeDom.window.document;
+    const whoWeServeSection = whoWeServeDoc.querySelector('section#who-we-serve');
+    outputDoc.querySelector('section#who-we-serve').innerHTML = whoWeServeSection.innerHTML;
+    const whoWeServeCSS = whoWeServeDoc.querySelector('style').textContent.trim();
 
-    const tailor = readFileSync('tailor-income.html', 'utf-8');
-    const tailorDom = new JSDOM(tailor);
-    const tailorDoc = tailorDom.window.document;
-    const tailorSection = tailorDoc.querySelector('section#tailor');
-    outputDoc.querySelector('section#tailor').innerHTML = tailorSection.innerHTML;
-    const tailorCSS = tailorDoc.querySelector('style').textContent.trim();
+    const whoWeAre = readFileSync('who-we-are.html', 'utf-8');
+    const whoWeAreDom = new JSDOM(whoWeAre);
+    const whoWeAreDoc = whoWeAreDom.window.document;
+    const whoWeAreSection = whoWeAreDoc.querySelector('section#who-we-are');
+    outputDoc.querySelector('section#who-we-are').innerHTML = whoWeAreSection.innerHTML;
+    const whoWeAreCSS = whoWeAreDoc.querySelector('style').textContent.trim();
 
-    const valueProp = readFileSync('value-prop.html', 'utf-8');
-    const valuePropDom = new JSDOM(valueProp);
-    const valuePropDoc = valuePropDom.window.document;
-    const valuePropSection = valuePropDoc.querySelector('section#value-prop');
-    outputDoc.querySelector('section#value-prop').innerHTML = valuePropSection.innerHTML;
-    const valuePropCSS = valuePropDoc.querySelector('style').textContent.trim();
+    const whoWeWorkWith = readFileSync('who-we-work-with.html', 'utf-8');
+    const whoWeWorkWithDom = new JSDOM(whoWeWorkWith);
+    const whoWeWorkWithDoc = whoWeWorkWithDom.window.document;
+    const whoWeWorkWithSection = whoWeWorkWithDoc.querySelector('section#who-we-work-with');
+    outputDoc.querySelector('section#who-we-work-with').innerHTML = whoWeWorkWithSection.innerHTML;
+    const whoWeWorkWithCSS = whoWeWorkWithDoc.querySelector('style').textContent.trim();
 
-    const product = readFileSync('product.html', 'utf-8');
-    const productDom = new JSDOM(product);
-    const productDoc = productDom.window.document;
-    const productSection = productDoc.querySelector('section#product');
-    outputDoc.querySelector('section#product').innerHTML = productSection.innerHTML;
-    const productCSS = productDoc.querySelector('style').textContent.trim();
+    const whatWeDo = readFileSync('what-we-do.html', 'utf-8');
+    const whatWeDoDom = new JSDOM(whatWeDo);
+    const whatWeDoDoc = whatWeDoDom.window.document;
+    const whatWeDoSection = whatWeDoDoc.querySelector('section#what-we-do');
+    outputDoc.querySelector('section#what-we-do').innerHTML = whatWeDoSection.innerHTML;
+    const whatWeDoCSS = whatWeDoDoc.querySelector('style').textContent.trim();
 
-    const contrast = readFileSync('contrast.html', 'utf-8');
-    const contrastDom = new JSDOM(contrast);
-    const contrastDoc = contrastDom.window.document;
-    const contrastSection = contrastDoc.querySelector('section#contrast');
-    outputDoc.querySelector('section#contrast').innerHTML = contrastSection.innerHTML;
-    const contrastCSS = contrastDoc.querySelector('style').textContent.trim();
 
-    const risks = readFileSync('risks.html', 'utf-8');
-    const risksDom = new JSDOM(risks);
-    const risksDoc = risksDom.window.document;
-    const risksSection = risksDoc.querySelector('section#risks');
-    outputDoc.querySelector('section#risks').innerHTML = risksSection.innerHTML;
-    const risksCSS = risksDoc.querySelector('style').textContent.trim();
+    const whyWeDiff = readFileSync('why-we-are-diff.html', 'utf-8');
+    const whyWeDiffDom = new JSDOM(whyWeDiff);
+    const whyWeDiffDoc = whyWeDiffDom.window.document;
+    const whyWeDiffSection = whyWeDiffDoc.querySelector('section#why-we-are-diff');
+    outputDoc.querySelector('section#why-we-are-diff').innerHTML = whyWeDiffSection.innerHTML;
+    const whyWeDiffCSS = whyWeDiffDoc.querySelector('style').textContent.trim();
 
-    // const disclaimer = readFileSync('disclaimer.html', 'utf-8');
-    // const disclaimerDom = new JSDOM(disclaimer);
-    // const disclaimerDoc = disclaimerDom.window.document;
-    // const disclaimerSection = disclaimerDoc.querySelector('section#disclaimer');
-    // outputDoc.querySelector('section#disclaimer').innerHTML = disclaimerSection.innerHTML;
-    // const disclaimerCSS = disclaimerDoc.querySelector('style').textContent.trim();
-
-    const finalCta = readFileSync('final-cta.html', 'utf-8');
-    const finalCtaDom = new JSDOM(finalCta);
-    const finalCtaDoc = finalCtaDom.window.document;
-    const finalCtaSection = finalCtaDoc.querySelector('section#final-cta');
-    outputDoc.querySelector('section#final-cta').innerHTML = finalCtaSection.innerHTML;
-    const finalCtaCSS = finalCtaDoc.querySelector('style').textContent.trim();
+    const callToAction = readFileSync('call-to-action.html', 'utf-8');
+    const callToActionDom = new JSDOM(callToAction);
+    const callToActionDoc = callToActionDom.window.document;
+    const callToActionSection = callToActionDoc.querySelector('section#call-to-action');
+    outputDoc.querySelector('section#call-to-action').innerHTML = callToActionSection.innerHTML;
+    const callToActionCSS = callToActionDoc.querySelector('style').textContent.trim();
 
 
     const footer = readFileSync('footer.html', 'utf-8');
@@ -107,14 +92,12 @@ function run() {
     const css = universalCss 
     + '\n' + navCSS
     + '\n' + heroCSS
-    + '\n' + stepsCSS
-    + '\n' + valuePropCSS
-    + '\n' + tailorCSS
-    + '\n' + productCSS
-    + '\n' + contrastCSS
-    + '\n' + risksCSS
-    // + '\n' + disclaimerCSS
-    + '\n' + finalCtaCSS
+    + '\n' + whoWeServeCSS
+    + '\n' + whoWeAreCSS
+    + '\n' + whoWeWorkWithCSS
+    + '\n' + whatWeDoCSS
+    + '\n' + whyWeDiffCSS
+    + '\n' + callToActionCSS
     + '\n' + footerCSS;
 
     writeFileSync('index.html', outputDom.serialize());
