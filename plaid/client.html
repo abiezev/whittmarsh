@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plaid Link</title>
+    <script src="https://cdn.plaid.com/link/v2/stable/link-initialize.js"></script>
+
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        #linkButton {
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: background-color 0.3s ease;
+            margin-bottom: 25px;
+        }
+
+        #linkButton:hover {
+            background-color: #0056b3;
+        }
+    </style>
+
+</head>
+<body>
+    <button id="linkButton">Plaid Link</button>
+    <div id="result"></div>
+    <script>
+        function getLinkToken() {
+            return 'link-sandbox-8fbe3aa9-f885-4db0-9af5-ec035de967e1';
+        }
+
+        async function postPublicToken(publicToken) {
+            try {
+                const response = await fetch('http://localhost:3000/submit-public-token', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ token: publicToken })
+                });
+                
+                const result = await response.json();
+                document.getElementById('result').innerHTML = result.message;
+            } catch (error) {
+                document.getElementById('result').innerHTML = 'Error sending public token';
+            }
+        }
+
+        const handler = Plaid.create({
+            token: getLinkToken(),
+            onSuccess: async (public_token, metadata) => {
+                console.log('Public Token: ', public_token);
+                console.log('Account ID: ', metadata.account_id);
+                await postPublicToken(public_token)
+            },
+            onExit: (err, metadata) => {
+                if (err != null) {
+                    console.error('Plaid Link Error: ', err);
+                }
+                console.log('Exit Metadata: ', metadata);
+            }
+        });
+
+        document.getElementById('linkButton').addEventListener('click', () => {
+            handler.open();
+        });
+    </script>
+</body>
+</html>
